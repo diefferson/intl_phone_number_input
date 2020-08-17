@@ -1,4 +1,3 @@
-/// Countries contains list of all most all the countries on Earth.
 class Countries {
   /// returns `List<Map<String, dynamic>` of countries which contains
   ///  *  num_code
@@ -7,18 +6,35 @@ class Countries {
   ///  *  en_short_name
   ///  *  nationality
   ///  *  dial_code
+  ///  *  nameTranslations
   ///
   ///   ```dart
   ///     {
   ///       "num_code": "566",
-  ///       "alpha_2_code": "NG",
-  ///       "alpha_3_code": "NGA",
-  ///       "en_short_name": "Nigeria",
-  ///       "nationality": "Nigerian",
-  ///       "dial_code": "+234"
+  ///        "alpha_2_code": "NG",
+  ///        "alpha_3_code": "NGA",
+  ///        "en_short_name": "Nigeria",
+  ///        "nationality": "Nigerian",
+  ///        "dial_code": "+234",
+  ///        "nameTranslations": {
+  ///          "sk": "Nigéria",
+  ///          "se": "Nigeria",
+  ///          "pl": "Nigeria",
+  ///          "no": "Nigeria",
+  ///          "ja": "ナイジェリア",
+  ///          "it": "Nigeria",
+  ///          "zh": "尼日利亚",
+  ///          "nl": "Nigeria",
+  ///          "de": "Nigeria",
+  ///          "fr": "Nigéria",
+  ///          "es": "Nigeria",
+  ///          "en": "Nigeria",
+  ///          "pt": "Nigériaa"
+  ///        }
   ///     }
   ///   ```
-  static get countryList => _countryList;
+  ///
+  static List<Map<String, dynamic>> get countryList => _countryList;
 
   static final List<Map<String, dynamic>> _countryList = [
     {
@@ -27,7 +43,22 @@ class Countries {
       "alpha_3_code": "AFG",
       "en_short_name": "Afghanistan",
       "nationality": "Afghan",
-      "dial_code": "+93"
+      "dial_code": "+93",
+      "nameTranslations": {
+        "sk": "Afganistan",
+        "se": "Afghanistan",
+        "pl": "Afganistan",
+        "no": "Afghanistan",
+        "ja": "アフガニスタン",
+        "it": "Afghanistan",
+        "zh": "阿富汗",
+        "nl": "Afghanistan",
+        "de": "Afghanistan",
+        "fr": "Afghanistan",
+        "es": "Afganistán",
+        "en": "Afghanistan",
+        "pt": "Afeganistão",
+      }
     },
     {
       "num_code": "248",
@@ -35,7 +66,22 @@ class Countries {
       "alpha_3_code": "ALA",
       "en_short_name": "Åland Islands",
       "nationality": "Åland Island",
-      "dial_code": "+358"
+      "dial_code": "+358",
+      "nameTranslations": {
+        "sk": "Alandy",
+        "se": "Ålánda",
+        "pl": "Wyspy Alandzkie",
+        "no": "Åland",
+        "ja": "オーランド諸島",
+        "it": "Isole Åland",
+        "zh": "奥兰群岛",
+        "nl": "Åland",
+        "de": "Ålandinseln",
+        "fr": "Îles Åland",
+        "es": "Islas Åland",
+        "en": "Åland Islands",
+        "pt": "Ilhas Aland",
+      }
     },
     {
       "num_code": "8",
@@ -43,7 +89,22 @@ class Countries {
       "alpha_3_code": "ALB",
       "en_short_name": "Albania",
       "nationality": "Albanian",
-      "dial_code": "+355"
+      "dial_code": "+355",
+      "nameTranslations": {
+        "sk": "Albánsko",
+        "se": "Albánia",
+        "pl": "Albania",
+        "no": "Albania",
+        "ja": "アルバニア",
+        "it": "Albania",
+        "zh": "阿尔巴尼亚",
+        "nl": "Albanië",
+        "de": "Albanien",
+        "fr": "Albanie",
+        "es": "Albania",
+        "en": "Albania",
+        "pt": "Albânia",
+      }
     },
     {
       "num_code": "12",
@@ -51,7 +112,22 @@ class Countries {
       "alpha_3_code": "DZA",
       "en_short_name": "Algeria",
       "nationality": "Algerian",
-      "dial_code": "+213"
+      "dial_code": "+213",
+      "nameTranslations": {
+        "sk": "Alžírsko",
+        "se": "Algeria",
+        "pl": "Algieria",
+        "no": "Algerie",
+        "ja": "アルジェリア",
+        "it": "Algeria",
+        "zh": "阿尔及利亚",
+        "nl": "Algerije",
+        "de": "Algerien",
+        "fr": "Algérie",
+        "es": "Argelia",
+        "en": "Algeria",
+        "pt": "Argélia",
+      }
     },
     {
       "num_code": "16",
@@ -59,7 +135,22 @@ class Countries {
       "alpha_3_code": "ASM",
       "en_short_name": "American Samoa",
       "nationality": "American Samoan",
-      "dial_code": "+1684"
+      "dial_code": "+1684",
+      "nameTranslations": {
+        "sk": "Americká Samoa",
+        "se": "Amerihká Samoa",
+        "pl": "Samoa Amerykańskie",
+        "no": "Amerikansk Samoa",
+        "ja": "米領サモア",
+        "it": "Samoa americane",
+        "zh": "美属萨摩亚",
+        "nl": "Amerikaans-Samoa",
+        "de": "Amerikanisch-Samoa",
+        "fr": "Samoa américaines",
+        "es": "Samoa Americana",
+        "en": "American Samoa",
+        "pt": "Samoa Americana",
+      }
     },
     {
       "num_code": "20",
@@ -67,7 +158,22 @@ class Countries {
       "alpha_3_code": "AND",
       "en_short_name": "Andorra",
       "nationality": "Andorran",
-      "dial_code": "+376"
+      "dial_code": "+376",
+      "nameTranslations": {
+        "sk": "Andorra",
+        "se": "Andorra",
+        "pl": "Andora",
+        "no": "Andorra",
+        "ja": "アンドラ",
+        "it": "Andorra",
+        "zh": "安道尔",
+        "nl": "Andorra",
+        "de": "Andorra",
+        "fr": "Andorre",
+        "es": "Andorra",
+        "en": "Andorra",
+        "pt": "Andorra",
+      }
     },
     {
       "num_code": "24",
@@ -75,7 +181,22 @@ class Countries {
       "alpha_3_code": "AGO",
       "en_short_name": "Angola",
       "nationality": "Angolan",
-      "dial_code": "+244"
+      "dial_code": "+244",
+      "nameTranslations": {
+        "sk": "Angola",
+        "se": "Angola",
+        "pl": "Angola",
+        "no": "Angola",
+        "ja": "アンゴラ",
+        "it": "Angola",
+        "zh": "安哥拉",
+        "nl": "Angola",
+        "de": "Angola",
+        "fr": "Angola",
+        "es": "Angola",
+        "en": "Angola",
+        "pt": "Angola",
+      }
     },
     {
       "num_code": "660",
@@ -83,7 +204,22 @@ class Countries {
       "alpha_3_code": "AIA",
       "en_short_name": "Anguilla",
       "nationality": "Anguillan",
-      "dial_code": "+1264"
+      "dial_code": "+1264",
+      "nameTranslations": {
+        "sk": "Anguilla",
+        "se": "Anguilla",
+        "pl": "Anguilla",
+        "no": "Anguilla",
+        "ja": "アンギラ",
+        "it": "Anguilla",
+        "zh": "安圭拉",
+        "nl": "Anguilla",
+        "de": "Anguilla",
+        "fr": "Anguilla",
+        "es": "Anguila",
+        "en": "Anguilla",
+        "pt": "Anguilla",
+      }
     },
     {
       "num_code": "10",
@@ -91,7 +227,22 @@ class Countries {
       "alpha_3_code": "ATA",
       "en_short_name": "Antarctica",
       "nationality": "Antarctic",
-      "dial_code": "+672"
+      "dial_code": "+672",
+      "nameTranslations": {
+        "sk": "Antarktída",
+        "se": "Antárktis",
+        "pl": "Antarktyda",
+        "no": "Antarktis",
+        "ja": "南極",
+        "it": "Antartide",
+        "zh": "南极洲",
+        "nl": "Antarctica",
+        "de": "Antarktis",
+        "fr": "Antarctique",
+        "es": "Antártida",
+        "en": "Antarctica",
+        "pt": "Antártica",
+      }
     },
     {
       "num_code": "28",
@@ -99,7 +250,22 @@ class Countries {
       "alpha_3_code": "ATG",
       "en_short_name": "Antigua and Barbuda",
       "nationality": "Antiguan or Barbudan",
-      "dial_code": "+1268"
+      "dial_code": "+1268",
+      "nameTranslations": {
+        "sk": "Antigua a Barbuda",
+        "se": "Antigua ja Barbuda",
+        "pl": "Antigua i Barbuda",
+        "no": "Antigua og Barbuda",
+        "ja": "アンティグア・バーブーダ",
+        "it": "Antigua e Barbuda",
+        "zh": "安提瓜和巴布达",
+        "nl": "Antigua en Barbuda",
+        "de": "Antigua und Barbuda",
+        "fr": "Antigua-et-Barbuda",
+        "es": "Antigua y Barbuda",
+        "en": "Antigua & Barbuda",
+        "pt": "Antigua e Barbuda",
+      }
     },
     {
       "num_code": "32",
@@ -107,7 +273,22 @@ class Countries {
       "alpha_3_code": "ARG",
       "en_short_name": "Argentina",
       "nationality": "Argentine",
-      "dial_code": "+54"
+      "dial_code": "+54",
+      "nameTranslations": {
+        "sk": "Argentína",
+        "se": "Argentina",
+        "pl": "Argentyna",
+        "no": "Argentina",
+        "ja": "アルゼンチン",
+        "it": "Argentina",
+        "zh": "阿根廷",
+        "nl": "Argentinië",
+        "de": "Argentinien",
+        "fr": "Argentine",
+        "es": "Argentina",
+        "en": "Argentina",
+        "pt": "Argentina",
+      }
     },
     {
       "num_code": "51",
@@ -115,7 +296,22 @@ class Countries {
       "alpha_3_code": "ARM",
       "en_short_name": "Armenia",
       "nationality": "Armenian",
-      "dial_code": "+374"
+      "dial_code": "+374",
+      "nameTranslations": {
+        "sk": "Arménsko",
+        "se": "Armenia",
+        "pl": "Armenia",
+        "no": "Armenia",
+        "ja": "アルメニア",
+        "it": "Armenia",
+        "zh": "亚美尼亚",
+        "nl": "Armenië",
+        "de": "Armenien",
+        "fr": "Arménie",
+        "es": "Armenia",
+        "en": "Armenia",
+        "pt": "Armênia",
+      }
     },
     {
       "num_code": "533",
@@ -123,7 +319,22 @@ class Countries {
       "alpha_3_code": "ABW",
       "en_short_name": "Aruba",
       "nationality": "Aruban",
-      "dial_code": "+297"
+      "dial_code": "+297",
+      "nameTranslations": {
+        "sk": "Aruba",
+        "se": "Aruba",
+        "pl": "Aruba",
+        "no": "Aruba",
+        "ja": "アルバ",
+        "it": "Aruba",
+        "zh": "阿鲁巴",
+        "nl": "Aruba",
+        "de": "Aruba",
+        "fr": "Aruba",
+        "es": "Aruba",
+        "en": "Aruba",
+        "pt": "Aruba",
+      }
     },
     {
       "num_code": "36",
@@ -131,7 +342,22 @@ class Countries {
       "alpha_3_code": "AUS",
       "en_short_name": "Australia",
       "nationality": "Australian",
-      "dial_code": "+61"
+      "dial_code": "+61",
+      "nameTranslations": {
+        "sk": "Austrália",
+        "se": "Austrália",
+        "pl": "Australia",
+        "no": "Australia",
+        "ja": "オーストラリア",
+        "it": "Australia",
+        "zh": "澳大利亚",
+        "nl": "Australië",
+        "de": "Australien",
+        "fr": "Australie",
+        "es": "Australia",
+        "en": "Australia",
+        "pt": "Austrália",
+      }
     },
     {
       "num_code": "40",
@@ -139,7 +365,22 @@ class Countries {
       "alpha_3_code": "AUT",
       "en_short_name": "Austria",
       "nationality": "Austrian",
-      "dial_code": "+43"
+      "dial_code": "+43",
+      "nameTranslations": {
+        "sk": "Rakúsko",
+        "se": "Nuortariika",
+        "pl": "Austria",
+        "no": "Østerrike",
+        "ja": "オーストリア",
+        "it": "Austria",
+        "zh": "奥地利",
+        "nl": "Oostenrijk",
+        "de": "Österreich",
+        "fr": "Autriche",
+        "es": "Austria",
+        "en": "Austria",
+        "pt": "Áustria",
+      }
     },
     {
       "num_code": "31",
@@ -147,7 +388,22 @@ class Countries {
       "alpha_3_code": "AZE",
       "en_short_name": "Azerbaijan",
       "nationality": "Azerbaijani, Azeri",
-      "dial_code": "+994"
+      "dial_code": "+994",
+      "nameTranslations": {
+        "sk": "Azerbajdžan",
+        "se": "Aserbaižan",
+        "pl": "Azerbejdżan",
+        "no": "Aserbajdsjan",
+        "ja": "アゼルバイジャン",
+        "it": "Azerbaigian",
+        "zh": "阿塞拜疆",
+        "nl": "Azerbeidzjan",
+        "de": "Aserbaidschan",
+        "fr": "Azerbaïdjan",
+        "es": "Azerbaiyán",
+        "en": "Azerbaijan",
+        "pt": "Azerbaijão",
+      }
     },
     {
       "num_code": "44",
@@ -155,7 +411,22 @@ class Countries {
       "alpha_3_code": "BHS",
       "en_short_name": "Bahamas",
       "nationality": "Bahamian",
-      "dial_code": "+1242"
+      "dial_code": "+1242",
+      "nameTranslations": {
+        "sk": "Bahamy",
+        "se": "Bahamas",
+        "pl": "Bahamy",
+        "no": "Bahamas",
+        "ja": "バハマ",
+        "it": "Bahamas",
+        "zh": "巴哈马",
+        "nl": "Bahama’s",
+        "de": "Bahamas",
+        "fr": "Bahamas",
+        "es": "Bahamas",
+        "en": "Bahamas",
+        "pt": "Bahamas",
+      }
     },
     {
       "num_code": "48",
@@ -163,7 +434,22 @@ class Countries {
       "alpha_3_code": "BHR",
       "en_short_name": "Bahrain",
       "nationality": "Bahraini",
-      "dial_code": "+973"
+      "dial_code": "+973",
+      "nameTranslations": {
+        "sk": "Bahrajn",
+        "se": "Bahrain",
+        "pl": "Bahrajn",
+        "no": "Bahrain",
+        "ja": "バーレーン",
+        "it": "Bahrein",
+        "zh": "巴林",
+        "nl": "Bahrein",
+        "de": "Bahrain",
+        "fr": "Bahreïn",
+        "es": "Baréin",
+        "en": "Bahrain",
+        "pt": "Bahrain",
+      }
     },
     {
       "num_code": "50",
@@ -171,7 +457,22 @@ class Countries {
       "alpha_3_code": "BGD",
       "en_short_name": "Bangladesh",
       "nationality": "Bangladeshi",
-      "dial_code": "+880"
+      "dial_code": "+880",
+      "nameTranslations": {
+        "sk": "Bangladéš",
+        "se": "Bangladesh",
+        "pl": "Bangladesz",
+        "no": "Bangladesh",
+        "ja": "バングラデシュ",
+        "it": "Bangladesh",
+        "zh": "孟加拉国",
+        "nl": "Bangladesh",
+        "de": "Bangladesch",
+        "fr": "Bangladesh",
+        "es": "Bangladés",
+        "en": "Bangladesh",
+        "pt": "Bangladesh",
+      }
     },
     {
       "num_code": "52",
@@ -179,7 +480,22 @@ class Countries {
       "alpha_3_code": "BRB",
       "en_short_name": "Barbados",
       "nationality": "Barbadian",
-      "dial_code": "+1246"
+      "dial_code": "+1246",
+      "nameTranslations": {
+        "sk": "Barbados",
+        "se": "Barbados",
+        "pl": "Barbados",
+        "no": "Barbados",
+        "ja": "バルバドス",
+        "it": "Barbados",
+        "zh": "巴巴多斯",
+        "nl": "Barbados",
+        "de": "Barbados",
+        "fr": "Barbade",
+        "es": "Barbados",
+        "en": "Barbados",
+        "pt": "Barbados",
+      }
     },
     {
       "num_code": "112",
@@ -187,7 +503,22 @@ class Countries {
       "alpha_3_code": "BLR",
       "en_short_name": "Belarus",
       "nationality": "Belarusian",
-      "dial_code": "+375"
+      "dial_code": "+375",
+      "nameTranslations": {
+        "sk": "Bielorusko",
+        "se": "Vilges-Ruošša",
+        "pl": "Białoruś",
+        "no": "Hviterussland",
+        "ja": "ベラルーシ",
+        "it": "Bielorussia",
+        "zh": "白俄罗斯",
+        "nl": "Belarus",
+        "de": "Belarus",
+        "fr": "Biélorussie",
+        "es": "Bielorrusia",
+        "en": "Belarus",
+        "pt": "Bielo-Rússia",
+      }
     },
     {
       "num_code": "56",
@@ -195,7 +526,22 @@ class Countries {
       "alpha_3_code": "BEL",
       "en_short_name": "Belgium",
       "nationality": "Belgian",
-      "dial_code": "+32"
+      "dial_code": "+32",
+      "nameTranslations": {
+        "sk": "Belgicko",
+        "se": "Belgia",
+        "pl": "Belgia",
+        "no": "Belgia",
+        "ja": "ベルギー",
+        "it": "Belgio",
+        "zh": "比利时",
+        "nl": "België",
+        "de": "Belgien",
+        "fr": "Belgique",
+        "es": "Bélgica",
+        "en": "Belgium",
+        "pt": "Bélgica",
+      }
     },
     {
       "num_code": "84",
@@ -203,7 +549,22 @@ class Countries {
       "alpha_3_code": "BLZ",
       "en_short_name": "Belize",
       "nationality": "Belizean",
-      "dial_code": "+501"
+      "dial_code": "+501",
+      "nameTranslations": {
+        "sk": "Belize",
+        "se": "Belize",
+        "pl": "Belize",
+        "no": "Belize",
+        "ja": "ベリーズ",
+        "it": "Belize",
+        "zh": "伯利兹",
+        "nl": "Belize",
+        "de": "Belize",
+        "fr": "Belize",
+        "es": "Belice",
+        "en": "Belize",
+        "pt": "Belize",
+      }
     },
     {
       "num_code": "204",
@@ -211,7 +572,22 @@ class Countries {
       "alpha_3_code": "BEN",
       "en_short_name": "Benin",
       "nationality": "Beninese, Beninois",
-      "dial_code": "+229"
+      "dial_code": "+229",
+      "nameTranslations": {
+        "sk": "Benin",
+        "se": "Benin",
+        "pl": "Benin",
+        "no": "Benin",
+        "ja": "ベナン",
+        "it": "Benin",
+        "zh": "贝宁",
+        "nl": "Benin",
+        "de": "Benin",
+        "fr": "Bénin",
+        "es": "Benín",
+        "en": "Benin",
+        "pt": "Benin",
+      }
     },
     {
       "num_code": "60",
@@ -219,7 +595,22 @@ class Countries {
       "alpha_3_code": "BMU",
       "en_short_name": "Bermuda",
       "nationality": "Bermudian, Bermudan",
-      "dial_code": "+1441"
+      "dial_code": "+1441",
+      "nameTranslations": {
+        "sk": "Bermudy",
+        "se": "Bermuda",
+        "pl": "Bermudy",
+        "no": "Bermuda",
+        "ja": "バミューダ",
+        "it": "Bermuda",
+        "zh": "百慕大",
+        "nl": "Bermuda",
+        "de": "Bermuda",
+        "fr": "Bermudes",
+        "es": "Bermudas",
+        "en": "Bermuda",
+        "pt": "Bermudas",
+      }
     },
     {
       "num_code": "64",
@@ -227,7 +618,22 @@ class Countries {
       "alpha_3_code": "BTN",
       "en_short_name": "Bhutan",
       "nationality": "Bhutanese",
-      "dial_code": "+975"
+      "dial_code": "+975",
+      "nameTranslations": {
+        "sk": "Bhután",
+        "se": "Bhutan",
+        "pl": "Bhutan",
+        "no": "Bhutan",
+        "ja": "ブータン",
+        "it": "Bhutan",
+        "zh": "不丹",
+        "nl": "Bhutan",
+        "de": "Bhutan",
+        "fr": "Bhoutan",
+        "es": "Bután",
+        "en": "Bhutan",
+        "pt": "Butão",
+      }
     },
     {
       "num_code": "68",
@@ -235,7 +641,22 @@ class Countries {
       "alpha_3_code": "BOL",
       "en_short_name": "Bolivia (Plurinational State of)",
       "nationality": "Bolivian",
-      "dial_code": "+591"
+      "dial_code": "+591",
+      "nameTranslations": {
+        "sk": "Bolívia",
+        "se": "Bolivia",
+        "pl": "Boliwia",
+        "no": "Bolivia",
+        "ja": "ボリビア",
+        "it": "Bolivia",
+        "zh": "玻利维亚",
+        "nl": "Bolivia",
+        "de": "Bolivien",
+        "fr": "Bolivie",
+        "es": "Bolivia",
+        "en": "Bolivia",
+        "pt": "Bolívia",
+      }
     },
     {
       "num_code": "70",
@@ -243,7 +664,22 @@ class Countries {
       "alpha_3_code": "BIH",
       "en_short_name": "Bosnia and Herzegovina",
       "nationality": "Bosnian or Herzegovinian",
-      "dial_code": "+387"
+      "dial_code": "+387",
+      "nameTranslations": {
+        "sk": "Bosna a Hercegovina",
+        "se": "Bosnia-Hercegovina",
+        "pl": "Bośnia i Hercegowina",
+        "no": "Bosnia-Hercegovina",
+        "ja": "ボスニア・ヘルツェゴビナ",
+        "it": "Bosnia ed Erzegovina",
+        "zh": "波斯尼亚和黑塞哥维那",
+        "nl": "Bosnië en Herzegovina",
+        "de": "Bosnien und Herzegowina",
+        "fr": "Bosnie-Herzégovine",
+        "es": "Bosnia y Herzegovina",
+        "en": "Bosnia & Herzegovina",
+        "pt": "Bósnia e Herzegovina",
+      }
     },
     {
       "num_code": "72",
@@ -251,7 +687,22 @@ class Countries {
       "alpha_3_code": "BWA",
       "en_short_name": "Botswana",
       "nationality": "Motswana, Botswanan",
-      "dial_code": "+267"
+      "dial_code": "+267",
+      "nameTranslations": {
+        "sk": "Botswana",
+        "se": "Botswana",
+        "pl": "Botswana",
+        "no": "Botswana",
+        "ja": "ボツワナ",
+        "it": "Botswana",
+        "zh": "博茨瓦纳",
+        "nl": "Botswana",
+        "de": "Botsuana",
+        "fr": "Botswana",
+        "es": "Botsuana",
+        "en": "Botswana",
+        "pt": "Botswana",
+      }
     },
     {
       "num_code": "74",
@@ -259,7 +710,22 @@ class Countries {
       "alpha_3_code": "BVT",
       "en_short_name": "Bouvet Island",
       "nationality": "Bouvet Island",
-      "dial_code": "+47"
+      "dial_code": "+47",
+      "nameTranslations": {
+        "sk": "Bouvetov ostrov",
+        "se": "Bouvet-sullot",
+        "pl": "Wyspa Bouveta",
+        "no": "Bouvetøya",
+        "ja": "ブーベ島",
+        "it": "Isola Bouvet",
+        "zh": "布韦岛",
+        "nl": "Bouveteiland",
+        "de": "Bouvetinsel",
+        "fr": "Île Bouvet",
+        "es": "Isla Bouvet",
+        "en": "Bouvet Island",
+        "pt": "Ilha Bouvet",
+      }
     },
     {
       "num_code": "76",
@@ -267,7 +733,22 @@ class Countries {
       "alpha_3_code": "BRA",
       "en_short_name": "Brazil",
       "nationality": "Brazilian",
-      "dial_code": "+55"
+      "dial_code": "+55",
+      "nameTranslations": {
+        "sk": "Brazília",
+        "se": "Brasil",
+        "pl": "Brazylia",
+        "no": "Brasil",
+        "ja": "ブラジル",
+        "it": "Brasile",
+        "zh": "巴西",
+        "nl": "Brazilië",
+        "de": "Brasilien",
+        "fr": "Brésil",
+        "es": "Brasil",
+        "en": "Brazil",
+        "pt": "Brasil",
+      }
     },
     {
       "num_code": "86",
@@ -275,7 +756,22 @@ class Countries {
       "alpha_3_code": "IOT",
       "en_short_name": "British Indian Ocean Territory",
       "nationality": "BIOT",
-      "dial_code": "+246"
+      "dial_code": "+246",
+      "nameTranslations": {
+        "sk": "Britské indickooceánske územie",
+        "se": "British Indian Ocean Territory",
+        "pl": "Brytyjskie Terytorium Oceanu Indyjskiego",
+        "no": "Det britiske territoriet i Indiahavet",
+        "ja": "英領インド洋地域",
+        "it": "Territorio britannico dell’Oceano Indiano",
+        "zh": "英属印度洋领地",
+        "nl": "Brits Indische Oceaanterritorium",
+        "de": "Britisches Territorium im Indischen Ozean",
+        "fr": "Territoire britannique de l’océan Indien",
+        "es": "Territorio Británico del Océano Índico",
+        "en": "British Indian Ocean Territory",
+        "pt": "Território Britânico do Oceano Índico",
+      }
     },
     {
       "num_code": "96",
@@ -283,7 +779,22 @@ class Countries {
       "alpha_3_code": "BRN",
       "en_short_name": "Brunei Darussalam",
       "nationality": "Bruneian",
-      "dial_code": "+673"
+      "dial_code": "+673",
+      "nameTranslations": {
+        "sk": "Brunej",
+        "se": "Brunei",
+        "pl": "Brunei",
+        "no": "Brunei",
+        "ja": "ブルネイ",
+        "it": "Brunei",
+        "zh": "文莱",
+        "nl": "Brunei",
+        "de": "Brunei Darussalam",
+        "fr": "Brunéi Darussalam",
+        "es": "Brunéi",
+        "en": "Brunei",
+        "pt": "Brunei",
+      }
     },
     {
       "num_code": "100",
@@ -291,7 +802,22 @@ class Countries {
       "alpha_3_code": "BGR",
       "en_short_name": "Bulgaria",
       "nationality": "Bulgarian",
-      "dial_code": "+359"
+      "dial_code": "+359",
+      "nameTranslations": {
+        "sk": "Bulharsko",
+        "se": "Bulgária",
+        "pl": "Bułgaria",
+        "no": "Bulgaria",
+        "ja": "ブルガリア",
+        "it": "Bulgaria",
+        "zh": "保加利亚",
+        "nl": "Bulgarije",
+        "de": "Bulgarien",
+        "fr": "Bulgarie",
+        "es": "Bulgaria",
+        "en": "Bulgaria",
+        "pt": "Bulgária",
+      }
     },
     {
       "num_code": "854",
@@ -299,7 +825,22 @@ class Countries {
       "alpha_3_code": "BFA",
       "en_short_name": "Burkina Faso",
       "nationality": "Burkinabé",
-      "dial_code": "+226"
+      "dial_code": "+226",
+      "nameTranslations": {
+        "sk": "Burkina Faso",
+        "se": "Burkina Faso",
+        "pl": "Burkina Faso",
+        "no": "Burkina Faso",
+        "ja": "ブルキナファソ",
+        "it": "Burkina Faso",
+        "zh": "布基纳法索",
+        "nl": "Burkina Faso",
+        "de": "Burkina Faso",
+        "fr": "Burkina Faso",
+        "es": "Burkina Faso",
+        "en": "Burkina Faso",
+        "pt": "Burkina Faso",
+      }
     },
     {
       "num_code": "108",
@@ -307,7 +848,22 @@ class Countries {
       "alpha_3_code": "BDI",
       "en_short_name": "Burundi",
       "nationality": "Burundian",
-      "dial_code": "+257"
+      "dial_code": "+257",
+      "nameTranslations": {
+        "sk": "Burundi",
+        "se": "Burundi",
+        "pl": "Burundi",
+        "no": "Burundi",
+        "ja": "ブルンジ",
+        "it": "Burundi",
+        "zh": "布隆迪",
+        "nl": "Burundi",
+        "de": "Burundi",
+        "fr": "Burundi",
+        "es": "Burundi",
+        "en": "Burundi",
+        "pt": "Burundi",
+      }
     },
     {
       "num_code": "132",
@@ -315,7 +871,22 @@ class Countries {
       "alpha_3_code": "CPV",
       "en_short_name": "Cabo Verde",
       "nationality": "Cabo Verdean",
-      "dial_code": "+238"
+      "dial_code": "+238",
+      "nameTranslations": {
+        "sk": "Kapverdy",
+        "se": "Kap Verde",
+        "pl": "Republika Zielonego Przylądka",
+        "no": "Kapp Verde",
+        "ja": "カーボベルデ",
+        "it": "Capo Verde",
+        "zh": "佛得角",
+        "nl": "Kaapverdië",
+        "de": "Cabo Verde",
+        "fr": "Cap-Vert",
+        "es": "Cabo Verde",
+        "en": "Cape Verde",
+        "pt": "cabo Verde",
+      }
     },
     {
       "num_code": "116",
@@ -323,7 +894,22 @@ class Countries {
       "alpha_3_code": "KHM",
       "en_short_name": "Cambodia",
       "nationality": "Cambodian",
-      "dial_code": "+855"
+      "dial_code": "+855",
+      "nameTranslations": {
+        "sk": "Kambodža",
+        "se": "Kambodža",
+        "pl": "Kambodża",
+        "no": "Kambodsja",
+        "ja": "カンボジア",
+        "it": "Cambogia",
+        "zh": "柬埔寨",
+        "nl": "Cambodja",
+        "de": "Kambodscha",
+        "fr": "Cambodge",
+        "es": "Camboya",
+        "en": "Cambodia",
+        "pt": "Camboja",
+      }
     },
     {
       "num_code": "120",
@@ -331,7 +917,22 @@ class Countries {
       "alpha_3_code": "CMR",
       "en_short_name": "Cameroon",
       "nationality": "Cameroonian",
-      "dial_code": "+237"
+      "dial_code": "+237",
+      "nameTranslations": {
+        "sk": "Kamerun",
+        "se": "Kamerun",
+        "pl": "Kamerun",
+        "no": "Kamerun",
+        "ja": "カメルーン",
+        "it": "Camerun",
+        "zh": "喀麦隆",
+        "nl": "Kameroen",
+        "de": "Kamerun",
+        "fr": "Cameroun",
+        "es": "Camerún",
+        "en": "Cameroon",
+        "pt": "Camarões",
+      }
     },
     {
       "num_code": "124",
@@ -339,7 +940,22 @@ class Countries {
       "alpha_3_code": "CAN",
       "en_short_name": "Canada",
       "nationality": "Canadian",
-      "dial_code": "+1"
+      "dial_code": "+1",
+      "nameTranslations": {
+        "sk": "Kanada",
+        "se": "Kanáda",
+        "pl": "Kanada",
+        "no": "Canada",
+        "ja": "カナダ",
+        "it": "Canada",
+        "zh": "加拿大",
+        "nl": "Canada",
+        "de": "Kanada",
+        "fr": "Canada",
+        "es": "Canadá",
+        "en": "Canada",
+        "pt": "Canadá",
+      }
     },
     {
       "num_code": "136",
@@ -347,7 +963,22 @@ class Countries {
       "alpha_3_code": "CYM",
       "en_short_name": "Cayman Islands",
       "nationality": "Caymanian",
-      "dial_code": "+1345"
+      "dial_code": "+1345",
+      "nameTranslations": {
+        "sk": "Kajmanie ostrovy",
+        "se": "Cayman-sullot",
+        "pl": "Kajmany",
+        "no": "Caymanøyene",
+        "ja": "ケイマン諸島",
+        "it": "Isole Cayman",
+        "zh": "开曼群岛",
+        "nl": "Kaaimaneilanden",
+        "de": "Kaimaninseln",
+        "fr": "Îles Caïmans",
+        "es": "Islas Caimán",
+        "en": "Cayman Islands",
+        "pt": "Ilhas Cayman",
+      }
     },
     {
       "num_code": "140",
@@ -355,7 +986,22 @@ class Countries {
       "alpha_3_code": "CAF",
       "en_short_name": "Central African Republic",
       "nationality": "Central African",
-      "dial_code": "+236"
+      "dial_code": "+236",
+      "nameTranslations": {
+        "sk": "Stredoafrická republika",
+        "se": "Gaska-Afrihká dásseváldi",
+        "pl": "Republika Środkowoafrykańska",
+        "no": "Den sentralafrikanske republikk",
+        "ja": "中央アフリカ共和国",
+        "it": "Repubblica Centrafricana",
+        "zh": "中非共和国",
+        "nl": "Centraal-Afrikaanse Republiek",
+        "de": "Zentralafrikanische Republik",
+        "fr": "République centrafricaine",
+        "es": "República Centroafricana",
+        "en": "Central African Republic",
+        "pt": "República Centro-Africana",
+      }
     },
     {
       "num_code": "148",
@@ -363,7 +1009,22 @@ class Countries {
       "alpha_3_code": "TCD",
       "en_short_name": "Chad",
       "nationality": "Chadian",
-      "dial_code": "+235"
+      "dial_code": "+235",
+      "nameTranslations": {
+        "sk": "Čad",
+        "se": "Tčad",
+        "pl": "Czad",
+        "no": "Tsjad",
+        "ja": "チャド",
+        "it": "Ciad",
+        "zh": "乍得",
+        "nl": "Tsjaad",
+        "de": "Tschad",
+        "fr": "Tchad",
+        "es": "Chad",
+        "en": "Chad",
+        "pt": "Chade",
+      }
     },
     {
       "num_code": "152",
@@ -371,7 +1032,22 @@ class Countries {
       "alpha_3_code": "CHL",
       "en_short_name": "Chile",
       "nationality": "Chilean",
-      "dial_code": "+56"
+      "dial_code": "+56",
+      "nameTranslations": {
+        "sk": "Čile",
+        "se": "Čiile",
+        "pl": "Chile",
+        "no": "Chile",
+        "ja": "チリ",
+        "it": "Cile",
+        "zh": "智利",
+        "nl": "Chili",
+        "de": "Chile",
+        "fr": "Chili",
+        "es": "Chile",
+        "en": "Chile",
+        "pt": "Chile",
+      }
     },
     {
       "num_code": "156",
@@ -379,7 +1055,22 @@ class Countries {
       "alpha_3_code": "CHN",
       "en_short_name": "China",
       "nationality": "Chinese",
-      "dial_code": "+86"
+      "dial_code": "+86",
+      "nameTranslations": {
+        "sk": "Čína",
+        "se": "Kiinná",
+        "pl": "Chiny",
+        "no": "Kina",
+        "ja": "中国",
+        "it": "Cina",
+        "zh": "中国",
+        "nl": "China",
+        "de": "China",
+        "fr": "Chine",
+        "es": "China",
+        "en": "China",
+        "pt": "China",
+      }
     },
     {
       "num_code": "162",
@@ -387,7 +1078,22 @@ class Countries {
       "alpha_3_code": "CXR",
       "en_short_name": "Christmas Island",
       "nationality": "Christmas Island",
-      "dial_code": "+61"
+      "dial_code": "+61",
+      "nameTranslations": {
+        "sk": "Vianočný ostrov",
+        "se": "Juovllat-sullot",
+        "pl": "Wyspa Bożego Narodzenia",
+        "no": "Christmasøya",
+        "ja": "クリスマス島",
+        "it": "Isola Christmas",
+        "zh": "圣诞岛",
+        "nl": "Christmaseiland",
+        "de": "Weihnachtsinsel",
+        "fr": "Île Christmas",
+        "es": "Isla de Navidad",
+        "en": "Christmas Island",
+        "pt": "Ilha do Natal",
+      }
     },
     {
       "num_code": "166",
@@ -395,7 +1101,22 @@ class Countries {
       "alpha_3_code": "CCK",
       "en_short_name": "Cocos (Keeling) Islands",
       "nationality": "Cocos Island",
-      "dial_code": "+61"
+      "dial_code": "+61",
+      "nameTranslations": {
+        "sk": "Kokosové ostrovy",
+        "se": "Cocos-sullot",
+        "pl": "Wyspy Kokosowe",
+        "no": "Kokosøyene",
+        "ja": "ココス(キーリング)諸島",
+        "it": "Isole Cocos (Keeling)",
+        "zh": "科科斯（基林）群岛",
+        "nl": "Cocoseilanden",
+        "de": "Kokosinseln",
+        "fr": "Îles Cocos",
+        "es": "Islas Cocos",
+        "en": "Cocos (Keeling) Islands",
+        "pt": "Ilhas Cocos (Keeling)",
+      }
     },
     {
       "num_code": "170",
@@ -403,7 +1124,22 @@ class Countries {
       "alpha_3_code": "COL",
       "en_short_name": "Colombia",
       "nationality": "Colombian",
-      "dial_code": "+57"
+      "dial_code": "+57",
+      "nameTranslations": {
+        "sk": "Kolumbia",
+        "se": "Kolombia",
+        "pl": "Kolumbia",
+        "no": "Colombia",
+        "ja": "コロンビア",
+        "it": "Colombia",
+        "zh": "哥伦比亚",
+        "nl": "Colombia",
+        "de": "Kolumbien",
+        "fr": "Colombie",
+        "es": "Colombia",
+        "en": "Colombia",
+        "pt": "Colômbia",
+      }
     },
     {
       "num_code": "174",
@@ -411,7 +1147,22 @@ class Countries {
       "alpha_3_code": "COM",
       "en_short_name": "Comoros",
       "nationality": "Comoran, Comorian",
-      "dial_code": "+269"
+      "dial_code": "+269",
+      "nameTranslations": {
+        "sk": "Komory",
+        "se": "Komoros",
+        "pl": "Komory",
+        "no": "Komorene",
+        "ja": "コモロ",
+        "it": "Comore",
+        "zh": "科摩罗",
+        "nl": "Comoren",
+        "de": "Komoren",
+        "fr": "Comores",
+        "es": "Comoras",
+        "en": "Comoros",
+        "pt": "Comores",
+      }
     },
     {
       "num_code": "178",
@@ -419,7 +1170,22 @@ class Countries {
       "alpha_3_code": "COG",
       "en_short_name": "Congo (Republic of the)",
       "nationality": "Congolese",
-      "dial_code": "+242"
+      "dial_code": "+242",
+      "nameTranslations": {
+        "sk": "Konžská republika",
+        "se": "Kongo-Brazzaville",
+        "pl": "Kongo",
+        "no": "Kongo-Brazzaville",
+        "ja": "コンゴ共和国(ブラザビル)",
+        "it": "Congo-Brazzaville",
+        "zh": "刚果（布）",
+        "nl": "Congo-Brazzaville",
+        "de": "Kongo-Brazzaville",
+        "fr": "Congo-Brazzaville",
+        "es": "Congo",
+        "en": "Congo - Brazzaville",
+        "pt": "Congo - Brazzaville",
+      }
     },
     {
       "num_code": "180",
@@ -427,7 +1193,22 @@ class Countries {
       "alpha_3_code": "COD",
       "en_short_name": "Congo (Democratic Republic of the)",
       "nationality": "Congolese",
-      "dial_code": "+243"
+      "dial_code": "+243",
+      "nameTranslations": {
+        "sk": "Konžská demokratická republika",
+        "se": "Kongo-Kinshasa",
+        "pl": "Demokratyczna Republika Konga",
+        "no": "Kongo-Kinshasa",
+        "ja": "コンゴ民主共和国(キンシャサ)",
+        "it": "Congo - Kinshasa",
+        "zh": "刚果（金）",
+        "nl": "Congo-Kinshasa",
+        "de": "Kongo-Kinshasa",
+        "fr": "Congo-Kinshasa",
+        "es": "República Democrática del Congo",
+        "en": "Congo - Kinshasa",
+        "pt": "Congo - Kinshasa",
+      }
     },
     {
       "num_code": "184",
@@ -435,7 +1216,22 @@ class Countries {
       "alpha_3_code": "COK",
       "en_short_name": "Cook Islands",
       "nationality": "Cook Island",
-      "dial_code": "+682"
+      "dial_code": "+682",
+      "nameTranslations": {
+        "sk": "Cookove ostrovy",
+        "se": "Cook-sullot",
+        "pl": "Wyspy Cooka",
+        "no": "Cookøyene",
+        "ja": "クック諸島",
+        "it": "Isole Cook",
+        "zh": "库克群岛",
+        "nl": "Cookeilanden",
+        "de": "Cookinseln",
+        "fr": "Îles Cook",
+        "es": "Islas Cook",
+        "en": "Cook Islands",
+        "pt": "Ilhas Cook",
+      }
     },
     {
       "num_code": "188",
@@ -443,7 +1239,22 @@ class Countries {
       "alpha_3_code": "CRI",
       "en_short_name": "Costa Rica",
       "nationality": "Costa Rican",
-      "dial_code": "+506"
+      "dial_code": "+506",
+      "nameTranslations": {
+        "sk": "Kostarika",
+        "se": "Costa Rica",
+        "pl": "Kostaryka",
+        "no": "Costa Rica",
+        "ja": "コスタリカ",
+        "it": "Costa Rica",
+        "zh": "哥斯达黎加",
+        "nl": "Costa Rica",
+        "de": "Costa Rica",
+        "fr": "Costa Rica",
+        "es": "Costa Rica",
+        "en": "Costa Rica",
+        "pt": "Costa Rica",
+      }
     },
     {
       "num_code": "384",
@@ -451,7 +1262,22 @@ class Countries {
       "alpha_3_code": "CIV",
       "en_short_name": "Côte d'Ivoire",
       "nationality": "Ivorian",
-      "dial_code": "+225"
+      "dial_code": "+225",
+      "nameTranslations": {
+        "sk": "Pobrežie Slonoviny",
+        "se": "Elfenbenariddu",
+        "pl": "Côte d’Ivoire",
+        "no": "Elfenbenskysten",
+        "ja": "コートジボワール",
+        "it": "Costa d’Avorio",
+        "zh": "科特迪瓦",
+        "nl": "Ivoorkust",
+        "de": "Côte d’Ivoire",
+        "fr": "Côte d’Ivoire",
+        "es": "Côte d’Ivoire",
+        "en": "Côte d’Ivoire",
+        "pt": "Côte d’Ivoire",
+      }
     },
     {
       "num_code": "191",
@@ -459,7 +1285,22 @@ class Countries {
       "alpha_3_code": "HRV",
       "en_short_name": "Croatia",
       "nationality": "Croatian",
-      "dial_code": "+385"
+      "dial_code": "+385",
+      "nameTranslations": {
+        "sk": "Chorvátsko",
+        "se": "Kroátia",
+        "pl": "Chorwacja",
+        "no": "Kroatia",
+        "ja": "クロアチア",
+        "it": "Croazia",
+        "zh": "克罗地亚",
+        "nl": "Kroatië",
+        "de": "Kroatien",
+        "fr": "Croatie",
+        "es": "Croacia",
+        "en": "Croatia",
+        "pt": "Croácia",
+      }
     },
     {
       "num_code": "192",
@@ -467,7 +1308,22 @@ class Countries {
       "alpha_3_code": "CUB",
       "en_short_name": "Cuba",
       "nationality": "Cuban",
-      "dial_code": "+53"
+      "dial_code": "+53",
+      "nameTranslations": {
+        "sk": "Kuba",
+        "se": "Kuba",
+        "pl": "Kuba",
+        "no": "Cuba",
+        "ja": "キューバ",
+        "it": "Cuba",
+        "zh": "古巴",
+        "nl": "Cuba",
+        "de": "Kuba",
+        "fr": "Cuba",
+        "es": "Cuba",
+        "en": "Cuba",
+        "pt": "Cuba",
+      }
     },
     {
       "num_code": "196",
@@ -475,7 +1331,22 @@ class Countries {
       "alpha_3_code": "CYP",
       "en_short_name": "Cyprus",
       "nationality": "Cypriot",
-      "dial_code": "+357"
+      "dial_code": "+357",
+      "nameTranslations": {
+        "sk": "Cyprus",
+        "se": "Kypros",
+        "pl": "Cypr",
+        "no": "Kypros",
+        "ja": "キプロス",
+        "it": "Cipro",
+        "zh": "塞浦路斯",
+        "nl": "Cyprus",
+        "de": "Zypern",
+        "fr": "Chypre",
+        "es": "Chipre",
+        "en": "Cyprus",
+        "pt": "Chipre",
+      }
     },
     {
       "num_code": "203",
@@ -483,7 +1354,22 @@ class Countries {
       "alpha_3_code": "CZE",
       "en_short_name": "Czech Republic",
       "nationality": "Czech",
-      "dial_code": "+420"
+      "dial_code": "+420",
+      "nameTranslations": {
+        "sk": "Česko",
+        "se": "Čeahkka",
+        "pl": "Czechy",
+        "no": "Tsjekkia",
+        "ja": "チェコ",
+        "it": "Cechia",
+        "zh": "捷克",
+        "nl": "Tsjechië",
+        "de": "Tschechien",
+        "fr": "Tchéquie",
+        "es": "Chequia",
+        "en": "Czechia",
+        "pt": "Czechia",
+      }
     },
     {
       "num_code": "208",
@@ -491,7 +1377,22 @@ class Countries {
       "alpha_3_code": "DNK",
       "en_short_name": "Denmark",
       "nationality": "Danish",
-      "dial_code": "+45"
+      "dial_code": "+45",
+      "nameTranslations": {
+        "sk": "Dánsko",
+        "se": "Dánmárku",
+        "pl": "Dania",
+        "no": "Danmark",
+        "ja": "デンマーク",
+        "it": "Danimarca",
+        "zh": "丹麦",
+        "nl": "Denemarken",
+        "de": "Dänemark",
+        "fr": "Danemark",
+        "es": "Dinamarca",
+        "en": "Denmark",
+        "pt": "Dinamarca",
+      }
     },
     {
       "num_code": "262",
@@ -499,7 +1400,22 @@ class Countries {
       "alpha_3_code": "DJI",
       "en_short_name": "Djibouti",
       "nationality": "Djiboutian",
-      "dial_code": "+253"
+      "dial_code": "+253",
+      "nameTranslations": {
+        "sk": "Džibutsko",
+        "se": "Djibouti",
+        "pl": "Dżibuti",
+        "no": "Djibouti",
+        "ja": "ジブチ",
+        "it": "Gibuti",
+        "zh": "吉布提",
+        "nl": "Djibouti",
+        "de": "Dschibuti",
+        "fr": "Djibouti",
+        "es": "Yibuti",
+        "en": "Djibouti",
+        "pt": "Djibouti",
+      }
     },
     {
       "num_code": "212",
@@ -507,7 +1423,22 @@ class Countries {
       "alpha_3_code": "DMA",
       "en_short_name": "Dominica",
       "nationality": "Dominican",
-      "dial_code": "+1767"
+      "dial_code": "+1767",
+      "nameTranslations": {
+        "sk": "Dominika",
+        "se": "Dominica",
+        "pl": "Dominika",
+        "no": "Dominica",
+        "ja": "ドミニカ国",
+        "it": "Dominica",
+        "zh": "多米尼克",
+        "nl": "Dominica",
+        "de": "Dominica",
+        "fr": "Dominique",
+        "es": "Dominica",
+        "en": "Dominica",
+        "pt": "Dominica",
+      }
     },
     {
       "num_code": "214",
@@ -515,7 +1446,22 @@ class Countries {
       "alpha_3_code": "DOM",
       "en_short_name": "Dominican Republic",
       "nationality": "Dominican",
-      "dial_code": "+1849"
+      "dial_code": "+1849",
+      "nameTranslations": {
+        "sk": "Dominikánska republika",
+        "se": "Dominikána dásseváldi",
+        "pl": "Dominikana",
+        "no": "Den dominikanske republikk",
+        "ja": "ドミニカ共和国",
+        "it": "Repubblica Dominicana",
+        "zh": "多米尼加共和国",
+        "nl": "Dominicaanse Republiek",
+        "de": "Dominikanische Republik",
+        "fr": "République dominicaine",
+        "es": "República Dominicana",
+        "en": "Dominican Republic",
+        "pt": "República Dominicana",
+      }
     },
     {
       "num_code": "218",
@@ -523,7 +1469,22 @@ class Countries {
       "alpha_3_code": "ECU",
       "en_short_name": "Ecuador",
       "nationality": "Ecuadorian",
-      "dial_code": "+593"
+      "dial_code": "+593",
+      "nameTranslations": {
+        "sk": "Ekvádor",
+        "se": "Ecuador",
+        "pl": "Ekwador",
+        "no": "Ecuador",
+        "ja": "エクアドル",
+        "it": "Ecuador",
+        "zh": "厄瓜多尔",
+        "nl": "Ecuador",
+        "de": "Ecuador",
+        "fr": "Équateur",
+        "es": "Ecuador",
+        "en": "Ecuador",
+        "pt": "Equador",
+      }
     },
     {
       "num_code": "818",
@@ -531,7 +1492,22 @@ class Countries {
       "alpha_3_code": "EGY",
       "en_short_name": "Egypt",
       "nationality": "Egyptian",
-      "dial_code": "+20"
+      "dial_code": "+20",
+      "nameTranslations": {
+        "sk": "Egypt",
+        "se": "Egypta",
+        "pl": "Egipt",
+        "no": "Egypt",
+        "ja": "エジプト",
+        "it": "Egitto",
+        "zh": "埃及",
+        "nl": "Egypte",
+        "de": "Ägypten",
+        "fr": "Égypte",
+        "es": "Egipto",
+        "en": "Egypt",
+        "pt": "Egito",
+      }
     },
     {
       "num_code": "222",
@@ -539,7 +1515,22 @@ class Countries {
       "alpha_3_code": "SLV",
       "en_short_name": "El Salvador",
       "nationality": "Salvadoran",
-      "dial_code": "+503"
+      "dial_code": "+503",
+      "nameTranslations": {
+        "sk": "Salvádor",
+        "se": "El Salvador",
+        "pl": "Salwador",
+        "no": "El Salvador",
+        "ja": "エルサルバドル",
+        "it": "El Salvador",
+        "zh": "萨尔瓦多",
+        "nl": "El Salvador",
+        "de": "El Salvador",
+        "fr": "Salvador",
+        "es": "El Salvador",
+        "en": "El Salvador",
+        "pt": "El Salvador",
+      }
     },
     {
       "num_code": "226",
@@ -547,7 +1538,22 @@ class Countries {
       "alpha_3_code": "GNQ",
       "en_short_name": "Equatorial Guinea",
       "nationality": "Equatorial Guinean, Equatoguinean",
-      "dial_code": "+240"
+      "dial_code": "+240",
+      "nameTranslations": {
+        "sk": "Rovníková Guinea",
+        "se": "Ekvatoriála Guinea",
+        "pl": "Gwinea Równikowa",
+        "no": "Ekvatorial-Guinea",
+        "ja": "赤道ギニア",
+        "it": "Guinea Equatoriale",
+        "zh": "赤道几内亚",
+        "nl": "Equatoriaal-Guinea",
+        "de": "Äquatorialguinea",
+        "fr": "Guinée équatoriale",
+        "es": "Guinea Ecuatorial",
+        "en": "Equatorial Guinea",
+        "pt": "Guiné Equatorial",
+      }
     },
     {
       "num_code": "232",
@@ -555,7 +1561,22 @@ class Countries {
       "alpha_3_code": "ERI",
       "en_short_name": "Eritrea",
       "nationality": "Eritrean",
-      "dial_code": "+291"
+      "dial_code": "+291",
+      "nameTranslations": {
+        "sk": "Eritrea",
+        "se": "Eritrea",
+        "pl": "Erytrea",
+        "no": "Eritrea",
+        "ja": "エリトリア",
+        "it": "Eritrea",
+        "zh": "厄立特里亚",
+        "nl": "Eritrea",
+        "de": "Eritrea",
+        "fr": "Érythrée",
+        "es": "Eritrea",
+        "en": "Eritrea",
+        "pt": "Eritreia",
+      }
     },
     {
       "num_code": "233",
@@ -563,7 +1584,22 @@ class Countries {
       "alpha_3_code": "EST",
       "en_short_name": "Estonia",
       "nationality": "Estonian",
-      "dial_code": "+372"
+      "dial_code": "+372",
+      "nameTranslations": {
+        "sk": "Estónsko",
+        "se": "Estlánda",
+        "pl": "Estonia",
+        "no": "Estland",
+        "ja": "エストニア",
+        "it": "Estonia",
+        "zh": "爱沙尼亚",
+        "nl": "Estland",
+        "de": "Estland",
+        "fr": "Estonie",
+        "es": "Estonia",
+        "en": "Estonia",
+        "pt": "Estônia",
+      }
     },
     {
       "num_code": "231",
@@ -571,7 +1607,22 @@ class Countries {
       "alpha_3_code": "ETH",
       "en_short_name": "Ethiopia",
       "nationality": "Ethiopian",
-      "dial_code": "+251"
+      "dial_code": "+251",
+      "nameTranslations": {
+        "sk": "Etiópia",
+        "se": "Etiopia",
+        "pl": "Etiopia",
+        "no": "Etiopia",
+        "ja": "エチオピア",
+        "it": "Etiopia",
+        "zh": "埃塞俄比亚",
+        "nl": "Ethiopië",
+        "de": "Äthiopien",
+        "fr": "Éthiopie",
+        "es": "Etiopía",
+        "en": "Ethiopia",
+        "pt": "Etiópia",
+      }
     },
     {
       "num_code": "238",
@@ -579,7 +1630,22 @@ class Countries {
       "alpha_3_code": "FLK",
       "en_short_name": "Falkland Islands (Malvinas)",
       "nationality": "Falkland Island",
-      "dial_code": "+500"
+      "dial_code": "+500",
+      "nameTranslations": {
+        "sk": "Falklandy",
+        "se": "Falklandsullot",
+        "pl": "Falklandy",
+        "no": "Falklandsøyene",
+        "ja": "フォークランド諸島",
+        "it": "Isole Falkland",
+        "zh": "福克兰群岛",
+        "nl": "Falklandeilanden",
+        "de": "Falklandinseln",
+        "fr": "Îles Malouines",
+        "es": "Islas Malvinas",
+        "en": "Falkland Islands",
+        "pt": "Ilhas Falkland",
+      }
     },
     {
       "num_code": "234",
@@ -587,7 +1653,22 @@ class Countries {
       "alpha_3_code": "FRO",
       "en_short_name": "Faroe Islands",
       "nationality": "Faroese",
-      "dial_code": "+298"
+      "dial_code": "+298",
+      "nameTranslations": {
+        "sk": "Faerské ostrovy",
+        "se": "Fearsullot",
+        "pl": "Wyspy Owcze",
+        "no": "Færøyene",
+        "ja": "フェロー諸島",
+        "it": "Isole Fær Øer",
+        "zh": "法罗群岛",
+        "nl": "Faeröer",
+        "de": "Färöer",
+        "fr": "Îles Féroé",
+        "es": "Islas Feroe",
+        "en": "Faroe Islands",
+        "pt": "ilhas Faroe",
+      }
     },
     {
       "num_code": "242",
@@ -595,7 +1676,22 @@ class Countries {
       "alpha_3_code": "FJI",
       "en_short_name": "Fiji",
       "nationality": "Fijian",
-      "dial_code": "+679"
+      "dial_code": "+679",
+      "nameTranslations": {
+        "sk": "Fidži",
+        "se": "Fijisullot",
+        "pl": "Fidżi",
+        "no": "Fiji",
+        "ja": "フィジー",
+        "it": "Figi",
+        "zh": "斐济",
+        "nl": "Fiji",
+        "de": "Fidschi",
+        "fr": "Fidji",
+        "es": "Fiyi",
+        "en": "Fiji",
+        "pt": "Fiji",
+      }
     },
     {
       "num_code": "246",
@@ -603,7 +1699,22 @@ class Countries {
       "alpha_3_code": "FIN",
       "en_short_name": "Finland",
       "nationality": "Finnish",
-      "dial_code": "+358"
+      "dial_code": "+358",
+      "nameTranslations": {
+        "sk": "Fínsko",
+        "se": "Suopma",
+        "pl": "Finlandia",
+        "no": "Finland",
+        "ja": "フィンランド",
+        "it": "Finlandia",
+        "zh": "芬兰",
+        "nl": "Finland",
+        "de": "Finnland",
+        "fr": "Finlande",
+        "es": "Finlandia",
+        "en": "Finland",
+        "pt": "Finlândia",
+      }
     },
     {
       "num_code": "250",
@@ -611,7 +1722,22 @@ class Countries {
       "alpha_3_code": "FRA",
       "en_short_name": "France",
       "nationality": "French",
-      "dial_code": "+33"
+      "dial_code": "+33",
+      "nameTranslations": {
+        "sk": "Francúzsko",
+        "se": "Frankriika",
+        "pl": "Francja",
+        "no": "Frankrike",
+        "ja": "フランス",
+        "it": "Francia",
+        "zh": "法国",
+        "nl": "Frankrijk",
+        "de": "Frankreich",
+        "fr": "France",
+        "es": "Francia",
+        "en": "France",
+        "pt": "França",
+      }
     },
     {
       "num_code": "254",
@@ -619,7 +1745,22 @@ class Countries {
       "alpha_3_code": "GUF",
       "en_short_name": "French Guiana",
       "nationality": "French Guianese",
-      "dial_code": "+594"
+      "dial_code": "+594",
+      "nameTranslations": {
+        "sk": "Francúzska Guyana",
+        "se": "Frankriikka Guayana",
+        "pl": "Gujana Francuska",
+        "no": "Fransk Guyana",
+        "ja": "仏領ギアナ",
+        "it": "Guyana francese",
+        "zh": "法属圭亚那",
+        "nl": "Frans-Guyana",
+        "de": "Französisch-Guayana",
+        "fr": "Guyane française",
+        "es": "Guayana Francesa",
+        "en": "French Guiana",
+        "pt": "Guiana Francesa",
+      }
     },
     {
       "num_code": "258",
@@ -627,7 +1768,22 @@ class Countries {
       "alpha_3_code": "PYF",
       "en_short_name": "French Polynesia",
       "nationality": "French Polynesian",
-      "dial_code": "+689"
+      "dial_code": "+689",
+      "nameTranslations": {
+        "sk": "Francúzska Polynézia",
+        "se": "Frankriikka Polynesia",
+        "pl": "Polinezja Francuska",
+        "no": "Fransk Polynesia",
+        "ja": "仏領ポリネシア",
+        "it": "Polinesia francese",
+        "zh": "法属波利尼西亚",
+        "nl": "Frans-Polynesië",
+        "de": "Französisch-Polynesien",
+        "fr": "Polynésie française",
+        "es": "Polinesia Francesa",
+        "en": "French Polynesia",
+        "pt": "Polinésia Francesa",
+      }
     },
     {
       "num_code": "260",
@@ -635,7 +1791,22 @@ class Countries {
       "alpha_3_code": "ATF",
       "en_short_name": "French Southern Territories",
       "nationality": "French Southern Territories",
-      "dial_code": "+262"
+      "dial_code": "+262",
+      "nameTranslations": {
+        "sk": "Francúzske južné a antarktické územia",
+        "se": "French Southern Territories",
+        "pl": "Francuskie Terytoria Południowe i Antarktyczne",
+        "no": "De franske sørterritorier",
+        "ja": "仏領極南諸島",
+        "it": "Terre australi francesi",
+        "zh": "法属南部领地",
+        "nl": "Franse Gebieden in de zuidelijke Indische Oceaan",
+        "de": "Französische Süd- und Antarktisgebiete",
+        "fr": "Terres australes françaises",
+        "es": "Territorios Australes Franceses",
+        "en": "French Southern Territories",
+        "pt": "Territórios Franceses do Sul",
+      }
     },
     {
       "num_code": "266",
@@ -643,7 +1814,22 @@ class Countries {
       "alpha_3_code": "GAB",
       "en_short_name": "Gabon",
       "nationality": "Gabonese",
-      "dial_code": "+241"
+      "dial_code": "+241",
+      "nameTranslations": {
+        "sk": "Gabon",
+        "se": "Gabon",
+        "pl": "Gabon",
+        "no": "Gabon",
+        "ja": "ガボン",
+        "it": "Gabon",
+        "zh": "加蓬",
+        "nl": "Gabon",
+        "de": "Gabun",
+        "fr": "Gabon",
+        "es": "Gabón",
+        "en": "Gabon",
+        "pt": "Gabão",
+      }
     },
     {
       "num_code": "270",
@@ -651,7 +1837,22 @@ class Countries {
       "alpha_3_code": "GMB",
       "en_short_name": "Gambia",
       "nationality": "Gambian",
-      "dial_code": "+220"
+      "dial_code": "+220",
+      "nameTranslations": {
+        "sk": "Gambia",
+        "se": "Gámbia",
+        "pl": "Gambia",
+        "no": "Gambia",
+        "ja": "ガンビア",
+        "it": "Gambia",
+        "zh": "冈比亚",
+        "nl": "Gambia",
+        "de": "Gambia",
+        "fr": "Gambie",
+        "es": "Gambia",
+        "en": "Gambia",
+        "pt": "Gâmbia",
+      }
     },
     {
       "num_code": "268",
@@ -659,7 +1860,22 @@ class Countries {
       "alpha_3_code": "GEO",
       "en_short_name": "Georgia",
       "nationality": "Georgian",
-      "dial_code": "+995"
+      "dial_code": "+995",
+      "nameTranslations": {
+        "sk": "Gruzínsko",
+        "se": "Georgia",
+        "pl": "Gruzja",
+        "no": "Georgia",
+        "ja": "ジョージア",
+        "it": "Georgia",
+        "zh": "格鲁吉亚",
+        "nl": "Georgië",
+        "de": "Georgien",
+        "fr": "Géorgie",
+        "es": "Georgia",
+        "en": "Georgia",
+        "pt": "Georgia",
+      }
     },
     {
       "num_code": "276",
@@ -667,7 +1883,22 @@ class Countries {
       "alpha_3_code": "DEU",
       "en_short_name": "Germany",
       "nationality": "German",
-      "dial_code": "+49"
+      "dial_code": "+49",
+      "nameTranslations": {
+        "sk": "Nemecko",
+        "se": "Duiska",
+        "pl": "Niemcy",
+        "no": "Tyskland",
+        "ja": "ドイツ",
+        "it": "Germania",
+        "zh": "德国",
+        "nl": "Duitsland",
+        "de": "Deutschland",
+        "fr": "Allemagne",
+        "es": "Alemania",
+        "en": "Germany",
+        "pt": "Alemanha",
+      }
     },
     {
       "num_code": "288",
@@ -675,7 +1906,22 @@ class Countries {
       "alpha_3_code": "GHA",
       "en_short_name": "Ghana",
       "nationality": "Ghanaian",
-      "dial_code": "+233"
+      "dial_code": "+233",
+      "nameTranslations": {
+        "sk": "Ghana",
+        "se": "Ghana",
+        "pl": "Ghana",
+        "no": "Ghana",
+        "ja": "ガーナ",
+        "it": "Ghana",
+        "zh": "加纳",
+        "nl": "Ghana",
+        "de": "Ghana",
+        "fr": "Ghana",
+        "es": "Ghana",
+        "en": "Ghana",
+        "pt": "Gana",
+      }
     },
     {
       "num_code": "292",
@@ -683,7 +1929,22 @@ class Countries {
       "alpha_3_code": "GIB",
       "en_short_name": "Gibraltar",
       "nationality": "Gibraltar",
-      "dial_code": "+350"
+      "dial_code": "+350",
+      "nameTranslations": {
+        "sk": "Gibraltár",
+        "se": "Gibraltar",
+        "pl": "Gibraltar",
+        "no": "Gibraltar",
+        "ja": "ジブラルタル",
+        "it": "Gibilterra",
+        "zh": "直布罗陀",
+        "nl": "Gibraltar",
+        "de": "Gibraltar",
+        "fr": "Gibraltar",
+        "es": "Gibraltar",
+        "en": "Gibraltar",
+        "pt": "Gibraltar",
+      }
     },
     {
       "num_code": "300",
@@ -691,7 +1952,22 @@ class Countries {
       "alpha_3_code": "GRC",
       "en_short_name": "Greece",
       "nationality": "Greek, Hellenic",
-      "dial_code": "+30"
+      "dial_code": "+30",
+      "nameTranslations": {
+        "sk": "Grécko",
+        "se": "Greika",
+        "pl": "Grecja",
+        "no": "Hellas",
+        "ja": "ギリシャ",
+        "it": "Grecia",
+        "zh": "希腊",
+        "nl": "Griekenland",
+        "de": "Griechenland",
+        "fr": "Grèce",
+        "es": "Grecia",
+        "en": "Greece",
+        "pt": "Grécia",
+      }
     },
     {
       "num_code": "304",
@@ -699,7 +1975,22 @@ class Countries {
       "alpha_3_code": "GRL",
       "en_short_name": "Greenland",
       "nationality": "Greenlandic",
-      "dial_code": "+299"
+      "dial_code": "+299",
+      "nameTranslations": {
+        "sk": "Grónsko",
+        "se": "Kalaallit Nunaat",
+        "pl": "Grenlandia",
+        "no": "Grønland",
+        "ja": "グリーンランド",
+        "it": "Groenlandia",
+        "zh": "格陵兰",
+        "nl": "Groenland",
+        "de": "Grönland",
+        "fr": "Groenland",
+        "es": "Groenlandia",
+        "en": "Greenland",
+        "pt": "Groenlândia",
+      }
     },
     {
       "num_code": "308",
@@ -707,7 +1998,22 @@ class Countries {
       "alpha_3_code": "GRD",
       "en_short_name": "Grenada",
       "nationality": "Grenadian",
-      "dial_code": "+1473"
+      "dial_code": "+1473",
+      "nameTranslations": {
+        "sk": "Grenada",
+        "se": "Grenada",
+        "pl": "Grenada",
+        "no": "Grenada",
+        "ja": "グレナダ",
+        "it": "Grenada",
+        "zh": "格林纳达",
+        "nl": "Grenada",
+        "de": "Grenada",
+        "fr": "Grenade",
+        "es": "Granada",
+        "en": "Grenada",
+        "pt": "Grenada",
+      }
     },
     {
       "num_code": "312",
@@ -715,7 +2021,22 @@ class Countries {
       "alpha_3_code": "GLP",
       "en_short_name": "Guadeloupe",
       "nationality": "Guadeloupe",
-      "dial_code": "+590"
+      "dial_code": "+590",
+      "nameTranslations": {
+        "sk": "Guadeloupe",
+        "se": "Guadeloupe",
+        "pl": "Gwadelupa",
+        "no": "Guadeloupe",
+        "ja": "グアドループ",
+        "it": "Guadalupa",
+        "zh": "瓜德罗普",
+        "nl": "Guadeloupe",
+        "de": "Guadeloupe",
+        "fr": "Guadeloupe",
+        "es": "Guadalupe",
+        "en": "Guadeloupe",
+        "pt": "Guadalupe",
+      }
     },
     {
       "num_code": "316",
@@ -723,7 +2044,22 @@ class Countries {
       "alpha_3_code": "GUM",
       "en_short_name": "Guam",
       "nationality": "Guamanian, Guambat",
-      "dial_code": "+1671"
+      "dial_code": "+1671",
+      "nameTranslations": {
+        "sk": "Guam",
+        "se": "Guam",
+        "pl": "Guam",
+        "no": "Guam",
+        "ja": "グアム",
+        "it": "Guam",
+        "zh": "关岛",
+        "nl": "Guam",
+        "de": "Guam",
+        "fr": "Guam",
+        "es": "Guam",
+        "en": "Guam",
+        "pt": "Guam",
+      }
     },
     {
       "num_code": "320",
@@ -731,7 +2067,22 @@ class Countries {
       "alpha_3_code": "GTM",
       "en_short_name": "Guatemala",
       "nationality": "Guatemalan",
-      "dial_code": "+502"
+      "dial_code": "+502",
+      "nameTranslations": {
+        "sk": "Guatemala",
+        "se": "Guatemala",
+        "pl": "Gwatemala",
+        "no": "Guatemala",
+        "ja": "グアテマラ",
+        "it": "Guatemala",
+        "zh": "危地马拉",
+        "nl": "Guatemala",
+        "de": "Guatemala",
+        "fr": "Guatemala",
+        "es": "Guatemala",
+        "en": "Guatemala",
+        "pt": "Guatemala",
+      }
     },
     {
       "num_code": "831",
@@ -739,7 +2090,22 @@ class Countries {
       "alpha_3_code": "GGY",
       "en_short_name": "Guernsey",
       "nationality": "Channel Island",
-      "dial_code": "+44"
+      "dial_code": "+44",
+      "nameTranslations": {
+        "sk": "Guernsey",
+        "se": "Guernsey",
+        "pl": "Guernsey",
+        "no": "Guernsey",
+        "ja": "ガーンジー",
+        "it": "Guernsey",
+        "zh": "根西岛",
+        "nl": "Guernsey",
+        "de": "Guernsey",
+        "fr": "Guernesey",
+        "es": "Guernsey",
+        "en": "Guernsey",
+        "pt": "Guernsey",
+      }
     },
     {
       "num_code": "324",
@@ -747,7 +2113,22 @@ class Countries {
       "alpha_3_code": "GIN",
       "en_short_name": "Guinea",
       "nationality": "Guinean",
-      "dial_code": "+224"
+      "dial_code": "+224",
+      "nameTranslations": {
+        "sk": "Guinea",
+        "se": "Guinea",
+        "pl": "Gwinea",
+        "no": "Guinea",
+        "ja": "ギニア",
+        "it": "Guinea",
+        "zh": "几内亚",
+        "nl": "Guinee",
+        "de": "Guinea",
+        "fr": "Guinée",
+        "es": "Guinea",
+        "en": "Guinea",
+        "pt": "Guiné",
+      }
     },
     {
       "num_code": "624",
@@ -755,7 +2136,22 @@ class Countries {
       "alpha_3_code": "GNB",
       "en_short_name": "Guinea-Bissau",
       "nationality": "Bissau-Guinean",
-      "dial_code": "+245"
+      "dial_code": "+245",
+      "nameTranslations": {
+        "sk": "Guinea-Bissau",
+        "se": "Guinea-Bissau",
+        "pl": "Gwinea Bissau",
+        "no": "Guinea-Bissau",
+        "ja": "ギニアビサウ",
+        "it": "Guinea-Bissau",
+        "zh": "几内亚比绍",
+        "nl": "Guinee-Bissau",
+        "de": "Guinea-Bissau",
+        "fr": "Guinée-Bissau",
+        "es": "Guinea-Bisáu",
+        "en": "Guinea-Bissau",
+        "pt": "Guiné-bissau",
+      }
     },
     {
       "num_code": "328",
@@ -763,7 +2159,22 @@ class Countries {
       "alpha_3_code": "GUY",
       "en_short_name": "Guyana",
       "nationality": "Guyanese",
-      "dial_code": "+592"
+      "dial_code": "+592",
+      "nameTranslations": {
+        "sk": "Guyana",
+        "se": "Guyana",
+        "pl": "Gujana",
+        "no": "Guyana",
+        "ja": "ガイアナ",
+        "it": "Guyana",
+        "zh": "圭亚那",
+        "nl": "Guyana",
+        "de": "Guyana",
+        "fr": "Guyana",
+        "es": "Guyana",
+        "en": "Guyana",
+        "pt": "Guiana",
+      }
     },
     {
       "num_code": "332",
@@ -771,7 +2182,22 @@ class Countries {
       "alpha_3_code": "HTI",
       "en_short_name": "Haiti",
       "nationality": "Haitian",
-      "dial_code": "+509"
+      "dial_code": "+509",
+      "nameTranslations": {
+        "sk": "Haiti",
+        "se": "Haiti",
+        "pl": "Haiti",
+        "no": "Haiti",
+        "ja": "ハイチ",
+        "it": "Haiti",
+        "zh": "海地",
+        "nl": "Haïti",
+        "de": "Haiti",
+        "fr": "Haïti",
+        "es": "Haití",
+        "en": "Haiti",
+        "pt": "Haiti",
+      }
     },
     {
       "num_code": "334",
@@ -779,7 +2205,22 @@ class Countries {
       "alpha_3_code": "HMD",
       "en_short_name": "Heard Island and McDonald Islands",
       "nationality": "Heard Island or McDonald Islands",
-      "dial_code": "+0"
+      "dial_code": "+0",
+      "nameTranslations": {
+        "sk": "Heardov ostrov a Macdonaldove ostrovy",
+        "se": "Heard- ja McDonald-sullot",
+        "pl": "Wyspy Heard i McDonalda",
+        "no": "Heard- og McDonaldøyene",
+        "ja": "ハード島・マクドナルド諸島",
+        "it": "Isole Heard e McDonald",
+        "zh": "赫德岛和麦克唐纳群岛",
+        "nl": "Heard en McDonaldeilanden",
+        "de": "Heard und McDonaldinseln",
+        "fr": "Îles Heard et McDonald",
+        "es": "Islas Heard y McDonald",
+        "en": "Heard & McDonald Islands",
+        "pt": "Ilhas Heard e McDonald",
+      }
     },
     {
       "num_code": "336",
@@ -787,7 +2228,22 @@ class Countries {
       "alpha_3_code": "VAT",
       "en_short_name": "Vatican City State",
       "nationality": "Vatican",
-      "dial_code": "+379"
+      "dial_code": "+379",
+      "nameTranslations": {
+        "sk": "Vatikán",
+        "se": "Vatikána",
+        "pl": "Watykan",
+        "no": "Vatikanstaten",
+        "ja": "バチカン市国",
+        "it": "Città del Vaticano",
+        "zh": "梵蒂冈",
+        "nl": "Vaticaanstad",
+        "de": "Vatikanstadt",
+        "fr": "État de la Cité du Vatican",
+        "es": "Ciudad del Vaticano",
+        "en": "Vatican City",
+        "pt": "Cidade do Vaticano",
+      }
     },
     {
       "num_code": "340",
@@ -795,7 +2251,22 @@ class Countries {
       "alpha_3_code": "HND",
       "en_short_name": "Honduras",
       "nationality": "Honduran",
-      "dial_code": "+504"
+      "dial_code": "+504",
+      "nameTranslations": {
+        "sk": "Honduras",
+        "se": "Honduras",
+        "pl": "Honduras",
+        "no": "Honduras",
+        "ja": "ホンジュラス",
+        "it": "Honduras",
+        "zh": "洪都拉斯",
+        "nl": "Honduras",
+        "de": "Honduras",
+        "fr": "Honduras",
+        "es": "Honduras",
+        "en": "Honduras",
+        "pt": "Honduras",
+      }
     },
     {
       "num_code": "344",
@@ -803,7 +2274,22 @@ class Countries {
       "alpha_3_code": "HKG",
       "en_short_name": "Hong Kong",
       "nationality": "Hong Kong, Hong Kongese",
-      "dial_code": "+852"
+      "dial_code": "+852",
+      "nameTranslations": {
+        "sk": "Hongkong – OAO Číny",
+        "se": "Hongkong",
+        "pl": "SRA Hongkong (Chiny)",
+        "no": "Hongkong S.A.R. Kina",
+        "ja": "中華人民共和国香港特別行政区",
+        "it": "RAS di Hong Kong",
+        "zh": "中国香港特别行政区",
+        "nl": "Hongkong SAR van China",
+        "de": "Sonderverwaltungsregion Hongkong",
+        "fr": "R.A.S. chinoise de Hong Kong",
+        "es": "RAE de Hong Kong (China)",
+        "en": "Hong Kong SAR China",
+        "pt": "RAE de Hong Kong China",
+      }
     },
     {
       "num_code": "348",
@@ -811,7 +2297,22 @@ class Countries {
       "alpha_3_code": "HUN",
       "en_short_name": "Hungary",
       "nationality": "Hungarian, Magyar",
-      "dial_code": "+36"
+      "dial_code": "+36",
+      "nameTranslations": {
+        "sk": "Maďarsko",
+        "se": "Ungár",
+        "pl": "Węgry",
+        "no": "Ungarn",
+        "ja": "ハンガリー",
+        "it": "Ungheria",
+        "zh": "匈牙利",
+        "nl": "Hongarije",
+        "de": "Ungarn",
+        "fr": "Hongrie",
+        "es": "Hungría",
+        "en": "Hungary",
+        "pt": "Hungria",
+      }
     },
     {
       "num_code": "352",
@@ -819,7 +2320,22 @@ class Countries {
       "alpha_3_code": "ISL",
       "en_short_name": "Iceland",
       "nationality": "Icelandic",
-      "dial_code": "+354"
+      "dial_code": "+354",
+      "nameTranslations": {
+        "sk": "Island",
+        "se": "Islánda",
+        "pl": "Islandia",
+        "no": "Island",
+        "ja": "アイスランド",
+        "it": "Islanda",
+        "zh": "冰岛",
+        "nl": "IJsland",
+        "de": "Island",
+        "fr": "Islande",
+        "es": "Islandia",
+        "en": "Iceland",
+        "pt": "Islândia",
+      }
     },
     {
       "num_code": "356",
@@ -827,7 +2343,22 @@ class Countries {
       "alpha_3_code": "IND",
       "en_short_name": "India",
       "nationality": "Indian",
-      "dial_code": "+91"
+      "dial_code": "+91",
+      "nameTranslations": {
+        "sk": "India",
+        "se": "India",
+        "pl": "Indie",
+        "no": "India",
+        "ja": "インド",
+        "it": "India",
+        "zh": "印度",
+        "nl": "India",
+        "de": "Indien",
+        "fr": "Inde",
+        "es": "India",
+        "en": "India",
+        "pt": "Índia",
+      }
     },
     {
       "num_code": "360",
@@ -835,7 +2366,22 @@ class Countries {
       "alpha_3_code": "IDN",
       "en_short_name": "Indonesia",
       "nationality": "Indonesian",
-      "dial_code": "+62"
+      "dial_code": "+62",
+      "nameTranslations": {
+        "sk": "Indonézia",
+        "se": "Indonesia",
+        "pl": "Indonezja",
+        "no": "Indonesia",
+        "ja": "インドネシア",
+        "it": "Indonesia",
+        "zh": "印度尼西亚",
+        "nl": "Indonesië",
+        "de": "Indonesien",
+        "fr": "Indonésie",
+        "es": "Indonesia",
+        "en": "Indonesia",
+        "pt": "Indonésia",
+      }
     },
     {
       "num_code": "364",
@@ -843,7 +2389,22 @@ class Countries {
       "alpha_3_code": "IRN",
       "en_short_name": "Iran",
       "nationality": "Iranian, Persian",
-      "dial_code": "+98"
+      "dial_code": "+98",
+      "nameTranslations": {
+        "sk": "Irán",
+        "se": "Iran",
+        "pl": "Iran",
+        "no": "Iran",
+        "ja": "イラン",
+        "it": "Iran",
+        "zh": "伊朗",
+        "nl": "Iran",
+        "de": "Iran",
+        "fr": "Iran",
+        "es": "Irán",
+        "en": "Iran",
+        "pt": "Irã",
+      }
     },
     {
       "num_code": "368",
@@ -851,7 +2412,22 @@ class Countries {
       "alpha_3_code": "IRQ",
       "en_short_name": "Iraq",
       "nationality": "Iraqi",
-      "dial_code": "+964"
+      "dial_code": "+964",
+      "nameTranslations": {
+        "sk": "Irak",
+        "se": "Irak",
+        "pl": "Irak",
+        "no": "Irak",
+        "ja": "イラク",
+        "it": "Iraq",
+        "zh": "伊拉克",
+        "nl": "Irak",
+        "de": "Irak",
+        "fr": "Irak",
+        "es": "Irak",
+        "en": "Iraq",
+        "pt": "Iraque",
+      }
     },
     {
       "num_code": "372",
@@ -859,7 +2435,22 @@ class Countries {
       "alpha_3_code": "IRL",
       "en_short_name": "Ireland",
       "nationality": "Irish",
-      "dial_code": "+353"
+      "dial_code": "+353",
+      "nameTranslations": {
+        "sk": "Írsko",
+        "se": "Irlánda",
+        "pl": "Irlandia",
+        "no": "Irland",
+        "ja": "アイルランド",
+        "it": "Irlanda",
+        "zh": "爱尔兰",
+        "nl": "Ierland",
+        "de": "Irland",
+        "fr": "Irlande",
+        "es": "Irlanda",
+        "en": "Ireland",
+        "pt": "Irlanda",
+      }
     },
     {
       "num_code": "833",
@@ -867,7 +2458,22 @@ class Countries {
       "alpha_3_code": "IMN",
       "en_short_name": "Isle of Man",
       "nationality": "Manx",
-      "dial_code": "+44"
+      "dial_code": "+44",
+      "nameTranslations": {
+        "sk": "Ostrov Man",
+        "se": "Mann-sullot",
+        "pl": "Wyspa Man",
+        "no": "Man",
+        "ja": "マン島",
+        "it": "Isola di Man",
+        "zh": "马恩岛",
+        "nl": "Isle of Man",
+        "de": "Isle of Man",
+        "fr": "Île de Man",
+        "es": "Isla de Man",
+        "en": "Isle of Man",
+        "pt": "Ilha de Man",
+      }
     },
     {
       "num_code": "376",
@@ -875,7 +2481,22 @@ class Countries {
       "alpha_3_code": "ISR",
       "en_short_name": "Israel",
       "nationality": "Israeli",
-      "dial_code": "+972"
+      "dial_code": "+972",
+      "nameTranslations": {
+        "sk": "Izrael",
+        "se": "Israel",
+        "pl": "Izrael",
+        "no": "Israel",
+        "ja": "イスラエル",
+        "it": "Israele",
+        "zh": "以色列",
+        "nl": "Israël",
+        "de": "Israel",
+        "fr": "Israël",
+        "es": "Israel",
+        "en": "Israel",
+        "pt": "Israel",
+      }
     },
     {
       "num_code": "380",
@@ -883,7 +2504,22 @@ class Countries {
       "alpha_3_code": "ITA",
       "en_short_name": "Italy",
       "nationality": "Italian",
-      "dial_code": "+39"
+      "dial_code": "+39",
+      "nameTranslations": {
+        "sk": "Taliansko",
+        "se": "Itália",
+        "pl": "Włochy",
+        "no": "Italia",
+        "ja": "イタリア",
+        "it": "Italia",
+        "zh": "意大利",
+        "nl": "Italië",
+        "de": "Italien",
+        "fr": "Italie",
+        "es": "Italia",
+        "en": "Italy",
+        "pt": "Itália",
+      }
     },
     {
       "num_code": "388",
@@ -891,7 +2527,22 @@ class Countries {
       "alpha_3_code": "JAM",
       "en_short_name": "Jamaica",
       "nationality": "Jamaican",
-      "dial_code": "+1876"
+      "dial_code": "+1876",
+      "nameTranslations": {
+        "sk": "Jamajka",
+        "se": "Jamaica",
+        "pl": "Jamajka",
+        "no": "Jamaica",
+        "ja": "ジャマイカ",
+        "it": "Giamaica",
+        "zh": "牙买加",
+        "nl": "Jamaica",
+        "de": "Jamaika",
+        "fr": "Jamaïque",
+        "es": "Jamaica",
+        "en": "Jamaica",
+        "pt": "Jamaica",
+      }
     },
     {
       "num_code": "392",
@@ -899,7 +2550,22 @@ class Countries {
       "alpha_3_code": "JPN",
       "en_short_name": "Japan",
       "nationality": "Japanese",
-      "dial_code": "+81"
+      "dial_code": "+81",
+      "nameTranslations": {
+        "sk": "Japonsko",
+        "se": "Japána",
+        "pl": "Japonia",
+        "no": "Japan",
+        "ja": "日本",
+        "it": "Giappone",
+        "zh": "日本",
+        "nl": "Japan",
+        "de": "Japan",
+        "fr": "Japon",
+        "es": "Japón",
+        "en": "Japan",
+        "pt": "Japão",
+      }
     },
     {
       "num_code": "832",
@@ -907,7 +2573,22 @@ class Countries {
       "alpha_3_code": "JEY",
       "en_short_name": "Jersey",
       "nationality": "Channel Island",
-      "dial_code": "+44"
+      "dial_code": "+44",
+      "nameTranslations": {
+        "sk": "Jersey",
+        "se": "Jersey",
+        "pl": "Jersey",
+        "no": "Jersey",
+        "ja": "ジャージー",
+        "it": "Jersey",
+        "zh": "泽西岛",
+        "nl": "Jersey",
+        "de": "Jersey",
+        "fr": "Jersey",
+        "es": "Jersey",
+        "en": "Jersey",
+        "pt": "Jersey",
+      }
     },
     {
       "num_code": "400",
@@ -915,7 +2596,22 @@ class Countries {
       "alpha_3_code": "JOR",
       "en_short_name": "Jordan",
       "nationality": "Jordanian",
-      "dial_code": "+962"
+      "dial_code": "+962",
+      "nameTranslations": {
+        "sk": "Jordánsko",
+        "se": "Jordánia",
+        "pl": "Jordania",
+        "no": "Jordan",
+        "ja": "ヨルダン",
+        "it": "Giordania",
+        "zh": "约旦",
+        "nl": "Jordanië",
+        "de": "Jordanien",
+        "fr": "Jordanie",
+        "es": "Jordania",
+        "en": "Jordan",
+        "pt": "Jordânia",
+      }
     },
     {
       "num_code": "398",
@@ -923,7 +2619,22 @@ class Countries {
       "alpha_3_code": "KAZ",
       "en_short_name": "Kazakhstan",
       "nationality": "Kazakhstani, Kazakh",
-      "dial_code": "+7"
+      "dial_code": "+7",
+      "nameTranslations": {
+        "sk": "Kazachstan",
+        "se": "Kasakstan",
+        "pl": "Kazachstan",
+        "no": "Kasakhstan",
+        "ja": "カザフスタン",
+        "it": "Kazakistan",
+        "zh": "哈萨克斯坦",
+        "nl": "Kazachstan",
+        "de": "Kasachstan",
+        "fr": "Kazakhstan",
+        "es": "Kazajistán",
+        "en": "Kazakhstan",
+        "pt": "Cazaquistão",
+      }
     },
     {
       "num_code": "404",
@@ -931,7 +2642,22 @@ class Countries {
       "alpha_3_code": "KEN",
       "en_short_name": "Kenya",
       "nationality": "Kenyan",
-      "dial_code": "+254"
+      "dial_code": "+254",
+      "nameTranslations": {
+        "sk": "Keňa",
+        "se": "Kenia",
+        "pl": "Kenia",
+        "no": "Kenya",
+        "ja": "ケニア",
+        "it": "Kenya",
+        "zh": "肯尼亚",
+        "nl": "Kenia",
+        "de": "Kenia",
+        "fr": "Kenya",
+        "es": "Kenia",
+        "en": "Kenya",
+        "pt": "Quênia",
+      }
     },
     {
       "num_code": "296",
@@ -939,7 +2665,22 @@ class Countries {
       "alpha_3_code": "KIR",
       "en_short_name": "Kiribati",
       "nationality": "I-Kiribati",
-      "dial_code": "+686"
+      "dial_code": "+686",
+      "nameTranslations": {
+        "sk": "Kiribati",
+        "se": "Kiribati",
+        "pl": "Kiribati",
+        "no": "Kiribati",
+        "ja": "キリバス",
+        "it": "Kiribati",
+        "zh": "基里巴斯",
+        "nl": "Kiribati",
+        "de": "Kiribati",
+        "fr": "Kiribati",
+        "es": "Kiribati",
+        "en": "Kiribati",
+        "pt": "Kiribati",
+      }
     },
     {
       "num_code": "408",
@@ -947,7 +2688,22 @@ class Countries {
       "alpha_3_code": "PRK",
       "en_short_name": "Korea (Democratic People's Republic of)",
       "nationality": "North Korean",
-      "dial_code": "+850"
+      "dial_code": "+850",
+      "nameTranslations": {
+        "sk": "Severná Kórea",
+        "se": "Davvi-Korea",
+        "pl": "Korea Północna",
+        "no": "Nord-Korea",
+        "ja": "北朝鮮",
+        "it": "Corea del Nord",
+        "zh": "朝鲜",
+        "nl": "Noord-Korea",
+        "de": "Nordkorea",
+        "fr": "Corée du Nord",
+        "es": "Corea del Norte",
+        "en": "North Korea",
+        "pt": "Coreia do Norte",
+      }
     },
     {
       "num_code": "410",
@@ -955,7 +2711,22 @@ class Countries {
       "alpha_3_code": "KOR",
       "en_short_name": "Korea (Republic of)",
       "nationality": "South Korean",
-      "dial_code": "+82"
+      "dial_code": "+82",
+      "nameTranslations": {
+        "sk": "Južná Kórea",
+        "se": "Mátta-Korea",
+        "pl": "Korea Południowa",
+        "no": "Sør-Korea",
+        "ja": "韓国",
+        "it": "Corea del Sud",
+        "zh": "韩国",
+        "nl": "Zuid-Korea",
+        "de": "Südkorea",
+        "fr": "Corée du Sud",
+        "es": "Corea del Sur",
+        "en": "South Korea",
+        "pt": "Coreia do Sul",
+      }
     },
     {
       "num_code": "414",
@@ -963,7 +2734,22 @@ class Countries {
       "alpha_3_code": "KWT",
       "en_short_name": "Kuwait",
       "nationality": "Kuwaiti",
-      "dial_code": "+965"
+      "dial_code": "+965",
+      "nameTranslations": {
+        "sk": "Kuvajt",
+        "se": "Kuwait",
+        "pl": "Kuwejt",
+        "no": "Kuwait",
+        "ja": "クウェート",
+        "it": "Kuwait",
+        "zh": "科威特",
+        "nl": "Koeweit",
+        "de": "Kuwait",
+        "fr": "Koweït",
+        "es": "Kuwait",
+        "en": "Kuwait",
+        "pt": "Kuwait",
+      }
     },
     {
       "num_code": "417",
@@ -971,7 +2757,22 @@ class Countries {
       "alpha_3_code": "KGZ",
       "en_short_name": "Kyrgyzstan",
       "nationality": "Kyrgyzstani, Kyrgyz, Kirgiz, Kirghiz",
-      "dial_code": "+996"
+      "dial_code": "+996",
+      "nameTranslations": {
+        "sk": "Kirgizsko",
+        "se": "Kirgisistan",
+        "pl": "Kirgistan",
+        "no": "Kirgisistan",
+        "ja": "キルギス",
+        "it": "Kirghizistan",
+        "zh": "吉尔吉斯斯坦",
+        "nl": "Kirgizië",
+        "de": "Kirgisistan",
+        "fr": "Kirghizistan",
+        "es": "Kirguistán",
+        "en": "Kyrgyzstan",
+        "pt": "Quirguistão",
+      }
     },
     {
       "num_code": "418",
@@ -979,7 +2780,22 @@ class Countries {
       "alpha_3_code": "LAO",
       "en_short_name": "Lao People's Democratic Republic",
       "nationality": "Lao, Laotian",
-      "dial_code": "+856"
+      "dial_code": "+856",
+      "nameTranslations": {
+        "sk": "Laos",
+        "se": "Laos",
+        "pl": "Laos",
+        "no": "Laos",
+        "ja": "ラオス",
+        "it": "Laos",
+        "zh": "老挝",
+        "nl": "Laos",
+        "de": "Laos",
+        "fr": "Laos",
+        "es": "Laos",
+        "en": "Laos",
+        "pt": "Laos",
+      }
     },
     {
       "num_code": "428",
@@ -987,7 +2803,22 @@ class Countries {
       "alpha_3_code": "LVA",
       "en_short_name": "Latvia",
       "nationality": "Latvian",
-      "dial_code": "+371"
+      "dial_code": "+371",
+      "nameTranslations": {
+        "sk": "Lotyšsko",
+        "se": "Látvia",
+        "pl": "Łotwa",
+        "no": "Latvia",
+        "ja": "ラトビア",
+        "it": "Lettonia",
+        "zh": "拉脱维亚",
+        "nl": "Letland",
+        "de": "Lettland",
+        "fr": "Lettonie",
+        "es": "Letonia",
+        "en": "Latvia",
+        "pt": "Letônia",
+      }
     },
     {
       "num_code": "422",
@@ -995,7 +2826,22 @@ class Countries {
       "alpha_3_code": "LBN",
       "en_short_name": "Lebanon",
       "nationality": "Lebanese",
-      "dial_code": "+961"
+      "dial_code": "+961",
+      "nameTranslations": {
+        "sk": "Libanon",
+        "se": "Libanon",
+        "pl": "Liban",
+        "no": "Libanon",
+        "ja": "レバノン",
+        "it": "Libano",
+        "zh": "黎巴嫩",
+        "nl": "Libanon",
+        "de": "Libanon",
+        "fr": "Liban",
+        "es": "Líbano",
+        "en": "Lebanon",
+        "pt": "Líbano",
+      }
     },
     {
       "num_code": "426",
@@ -1003,7 +2849,22 @@ class Countries {
       "alpha_3_code": "LSO",
       "en_short_name": "Lesotho",
       "nationality": "Basotho",
-      "dial_code": "+266"
+      "dial_code": "+266",
+      "nameTranslations": {
+        "sk": "Lesotho",
+        "se": "Lesotho",
+        "pl": "Lesotho",
+        "no": "Lesotho",
+        "ja": "レソト",
+        "it": "Lesotho",
+        "zh": "莱索托",
+        "nl": "Lesotho",
+        "de": "Lesotho",
+        "fr": "Lesotho",
+        "es": "Lesoto",
+        "en": "Lesotho",
+        "pt": "Lesoto",
+      }
     },
     {
       "num_code": "430",
@@ -1011,7 +2872,22 @@ class Countries {
       "alpha_3_code": "LBR",
       "en_short_name": "Liberia",
       "nationality": "Liberian",
-      "dial_code": "+231"
+      "dial_code": "+231",
+      "nameTranslations": {
+        "sk": "Libéria",
+        "se": "Liberia",
+        "pl": "Liberia",
+        "no": "Liberia",
+        "ja": "リベリア",
+        "it": "Liberia",
+        "zh": "利比里亚",
+        "nl": "Liberia",
+        "de": "Liberia",
+        "fr": "Libéria",
+        "es": "Liberia",
+        "en": "Liberia",
+        "pt": "Libéria",
+      }
     },
     {
       "num_code": "434",
@@ -1019,7 +2895,22 @@ class Countries {
       "alpha_3_code": "LBY",
       "en_short_name": "Libya",
       "nationality": "Libyan",
-      "dial_code": "+218"
+      "dial_code": "+218",
+      "nameTranslations": {
+        "sk": "Líbya",
+        "se": "Libya",
+        "pl": "Libia",
+        "no": "Libya",
+        "ja": "リビア",
+        "it": "Libia",
+        "zh": "利比亚",
+        "nl": "Libië",
+        "de": "Libyen",
+        "fr": "Libye",
+        "es": "Libia",
+        "en": "Libya",
+        "pt": "Líbia",
+      }
     },
     {
       "num_code": "438",
@@ -1027,7 +2918,22 @@ class Countries {
       "alpha_3_code": "LIE",
       "en_short_name": "Liechtenstein",
       "nationality": "Liechtenstein",
-      "dial_code": "+423"
+      "dial_code": "+423",
+      "nameTranslations": {
+        "sk": "Lichtenštajnsko",
+        "se": "Liechtenstein",
+        "pl": "Liechtenstein",
+        "no": "Liechtenstein",
+        "ja": "リヒテンシュタイン",
+        "it": "Liechtenstein",
+        "zh": "列支敦士登",
+        "nl": "Liechtenstein",
+        "de": "Liechtenstein",
+        "fr": "Liechtenstein",
+        "es": "Liechtenstein",
+        "en": "Liechtenstein",
+        "pt": "Liechtenstein",
+      }
     },
     {
       "num_code": "440",
@@ -1035,7 +2941,22 @@ class Countries {
       "alpha_3_code": "LTU",
       "en_short_name": "Lithuania",
       "nationality": "Lithuanian",
-      "dial_code": "+370"
+      "dial_code": "+370",
+      "nameTranslations": {
+        "sk": "Litva",
+        "se": "Lietuva",
+        "pl": "Litwa",
+        "no": "Litauen",
+        "ja": "リトアニア",
+        "it": "Lituania",
+        "zh": "立陶宛",
+        "nl": "Litouwen",
+        "de": "Litauen",
+        "fr": "Lituanie",
+        "es": "Lituania",
+        "en": "Lithuania",
+        "pt": "Lituânia",
+      }
     },
     {
       "num_code": "442",
@@ -1043,7 +2964,22 @@ class Countries {
       "alpha_3_code": "LUX",
       "en_short_name": "Luxembourg",
       "nationality": "Luxembourg, Luxembourgish",
-      "dial_code": "+352"
+      "dial_code": "+352",
+      "nameTranslations": {
+        "sk": "Luxembursko",
+        "se": "Luxembourg",
+        "pl": "Luksemburg",
+        "no": "Luxemburg",
+        "ja": "ルクセンブルク",
+        "it": "Lussemburgo",
+        "zh": "卢森堡",
+        "nl": "Luxemburg",
+        "de": "Luxemburg",
+        "fr": "Luxembourg",
+        "es": "Luxemburgo",
+        "en": "Luxembourg",
+        "pt": "Luxemburgo",
+      }
     },
     {
       "num_code": "446",
@@ -1051,7 +2987,22 @@ class Countries {
       "alpha_3_code": "MAC",
       "en_short_name": "Macao",
       "nationality": "Macanese, Chinese",
-      "dial_code": "+853"
+      "dial_code": "+853",
+      "nameTranslations": {
+        "sk": "Macao – OAO Číny",
+        "se": "Makáo",
+        "pl": "SRA Makau (Chiny)",
+        "no": "Macao S.A.R. Kina",
+        "ja": "中華人民共和国マカオ特別行政区",
+        "it": "RAS di Macao",
+        "zh": "中国澳门特别行政区",
+        "nl": "Macau SAR van China",
+        "de": "Sonderverwaltungsregion Macau",
+        "fr": "R.A.S. chinoise de Macao",
+        "es": "RAE de Macao (China)",
+        "en": "Macao SAR China",
+        "pt": "RAE de Macau China",
+      }
     },
     {
       "num_code": "807",
@@ -1059,7 +3010,22 @@ class Countries {
       "alpha_3_code": "MKD",
       "en_short_name": "Macedonia (the former Yugoslav Republic of)",
       "nationality": "Macedonian",
-      "dial_code": "+389"
+      "dial_code": "+389",
+      "nameTranslations": {
+        "sk": "Severné Macedónsko",
+        "se": "North Macedonia",
+        "pl": "Macedonia Północna",
+        "no": "Nord-Makedonia",
+        "ja": "北マケドニア",
+        "it": "Macedonia del Nord",
+        "zh": "北马其顿",
+        "nl": "Noord-Macedonië",
+        "de": "Nordmazedonien",
+        "fr": "Macédoine du Nord",
+        "es": "Macedonia del Norte",
+        "en": "North Macedonia",
+        "pt": "Macedônia do Norte",
+      }
     },
     {
       "num_code": "450",
@@ -1067,7 +3033,22 @@ class Countries {
       "alpha_3_code": "MDG",
       "en_short_name": "Madagascar",
       "nationality": "Malagasy",
-      "dial_code": "+261"
+      "dial_code": "+261",
+      "nameTranslations": {
+        "sk": "Madagaskar",
+        "se": "Madagaskar",
+        "pl": "Madagaskar",
+        "no": "Madagaskar",
+        "ja": "マダガスカル",
+        "it": "Madagascar",
+        "zh": "马达加斯加",
+        "nl": "Madagaskar",
+        "de": "Madagaskar",
+        "fr": "Madagascar",
+        "es": "Madagascar",
+        "en": "Madagascar",
+        "pt": "Madagáscar",
+      }
     },
     {
       "num_code": "454",
@@ -1075,7 +3056,22 @@ class Countries {
       "alpha_3_code": "MWI",
       "en_short_name": "Malawi",
       "nationality": "Malawian",
-      "dial_code": "+265"
+      "dial_code": "+265",
+      "nameTranslations": {
+        "sk": "Malawi",
+        "se": "Malawi",
+        "pl": "Malawi",
+        "no": "Malawi",
+        "ja": "マラウイ",
+        "it": "Malawi",
+        "zh": "马拉维",
+        "nl": "Malawi",
+        "de": "Malawi",
+        "fr": "Malawi",
+        "es": "Malaui",
+        "en": "Malawi",
+        "pt": "Malawi",
+      }
     },
     {
       "num_code": "458",
@@ -1083,7 +3079,22 @@ class Countries {
       "alpha_3_code": "MYS",
       "en_short_name": "Malaysia",
       "nationality": "Malaysian",
-      "dial_code": "+60"
+      "dial_code": "+60",
+      "nameTranslations": {
+        "sk": "Malajzia",
+        "se": "Malesia",
+        "pl": "Malezja",
+        "no": "Malaysia",
+        "ja": "マレーシア",
+        "it": "Malaysia",
+        "zh": "马来西亚",
+        "nl": "Maleisië",
+        "de": "Malaysia",
+        "fr": "Malaisie",
+        "es": "Malasia",
+        "en": "Malaysia",
+        "pt": "Malásia",
+      }
     },
     {
       "num_code": "462",
@@ -1091,7 +3102,22 @@ class Countries {
       "alpha_3_code": "MDV",
       "en_short_name": "Maldives",
       "nationality": "Maldivian",
-      "dial_code": "+960"
+      "dial_code": "+960",
+      "nameTranslations": {
+        "sk": "Maldivy",
+        "se": "Malediivvat",
+        "pl": "Malediwy",
+        "no": "Maldivene",
+        "ja": "モルディブ",
+        "it": "Maldive",
+        "zh": "马尔代夫",
+        "nl": "Maldiven",
+        "de": "Malediven",
+        "fr": "Maldives",
+        "es": "Maldivas",
+        "en": "Maldives",
+        "pt": "Maldivas",
+      }
     },
     {
       "num_code": "466",
@@ -1099,7 +3125,22 @@ class Countries {
       "alpha_3_code": "MLI",
       "en_short_name": "Mali",
       "nationality": "Malian, Malinese",
-      "dial_code": "+223"
+      "dial_code": "+223",
+      "nameTranslations": {
+        "sk": "Mali",
+        "se": "Mali",
+        "pl": "Mali",
+        "no": "Mali",
+        "ja": "マリ",
+        "it": "Mali",
+        "zh": "马里",
+        "nl": "Mali",
+        "de": "Mali",
+        "fr": "Mali",
+        "es": "Mali",
+        "en": "Mali",
+        "pt": "Mali",
+      }
     },
     {
       "num_code": "470",
@@ -1107,7 +3148,22 @@ class Countries {
       "alpha_3_code": "MLT",
       "en_short_name": "Malta",
       "nationality": "Maltese",
-      "dial_code": "+356"
+      "dial_code": "+356",
+      "nameTranslations": {
+        "sk": "Malta",
+        "se": "Málta",
+        "pl": "Malta",
+        "no": "Malta",
+        "ja": "マルタ",
+        "it": "Malta",
+        "zh": "马耳他",
+        "nl": "Malta",
+        "de": "Malta",
+        "fr": "Malte",
+        "es": "Malta",
+        "en": "Malta",
+        "pt": "Malta",
+      }
     },
     {
       "num_code": "584",
@@ -1115,7 +3171,22 @@ class Countries {
       "alpha_3_code": "MHL",
       "en_short_name": "Marshall Islands",
       "nationality": "Marshallese",
-      "dial_code": "+692"
+      "dial_code": "+692",
+      "nameTranslations": {
+        "sk": "Marshallove ostrovy",
+        "se": "Marshallsullot",
+        "pl": "Wyspy Marshalla",
+        "no": "Marshalløyene",
+        "ja": "マーシャル諸島",
+        "it": "Isole Marshall",
+        "zh": "马绍尔群岛",
+        "nl": "Marshalleilanden",
+        "de": "Marshallinseln",
+        "fr": "Îles Marshall",
+        "es": "Islas Marshall",
+        "en": "Marshall Islands",
+        "pt": "Ilhas Marshall",
+      }
     },
     {
       "num_code": "474",
@@ -1123,7 +3194,22 @@ class Countries {
       "alpha_3_code": "MTQ",
       "en_short_name": "Martinique",
       "nationality": "Martiniquais, Martinican",
-      "dial_code": "+596"
+      "dial_code": "+596",
+      "nameTranslations": {
+        "sk": "Martinik",
+        "se": "Martinique",
+        "pl": "Martynika",
+        "no": "Martinique",
+        "ja": "マルティニーク",
+        "it": "Martinica",
+        "zh": "马提尼克",
+        "nl": "Martinique",
+        "de": "Martinique",
+        "fr": "Martinique",
+        "es": "Martinica",
+        "en": "Martinique",
+        "pt": "Martinica",
+      }
     },
     {
       "num_code": "478",
@@ -1131,7 +3217,22 @@ class Countries {
       "alpha_3_code": "MRT",
       "en_short_name": "Mauritania",
       "nationality": "Mauritanian",
-      "dial_code": "+222"
+      "dial_code": "+222",
+      "nameTranslations": {
+        "sk": "Mauritánia",
+        "se": "Mauretánia",
+        "pl": "Mauretania",
+        "no": "Mauritania",
+        "ja": "モーリタニア",
+        "it": "Mauritania",
+        "zh": "毛里塔尼亚",
+        "nl": "Mauritanië",
+        "de": "Mauretanien",
+        "fr": "Mauritanie",
+        "es": "Mauritania",
+        "en": "Mauritania",
+        "pt": "Mauritânia",
+      }
     },
     {
       "num_code": "480",
@@ -1139,7 +3240,22 @@ class Countries {
       "alpha_3_code": "MUS",
       "en_short_name": "Mauritius",
       "nationality": "Mauritian",
-      "dial_code": "+230"
+      "dial_code": "+230",
+      "nameTranslations": {
+        "sk": "Maurícius",
+        "se": "Mauritius",
+        "pl": "Mauritius",
+        "no": "Mauritius",
+        "ja": "モーリシャス",
+        "it": "Mauritius",
+        "zh": "毛里求斯",
+        "nl": "Mauritius",
+        "de": "Mauritius",
+        "fr": "Maurice",
+        "es": "Mauricio",
+        "en": "Mauritius",
+        "pt": "Maurício",
+      }
     },
     {
       "num_code": "175",
@@ -1147,7 +3263,22 @@ class Countries {
       "alpha_3_code": "MYT",
       "en_short_name": "Mayotte",
       "nationality": "Mahoran",
-      "dial_code": "+262"
+      "dial_code": "+262",
+      "nameTranslations": {
+        "sk": "Mayotte",
+        "se": "Mayotte",
+        "pl": "Majotta",
+        "no": "Mayotte",
+        "ja": "マヨット",
+        "it": "Mayotte",
+        "zh": "马约特",
+        "nl": "Mayotte",
+        "de": "Mayotte",
+        "fr": "Mayotte",
+        "es": "Mayotte",
+        "en": "Mayotte",
+        "pt": "Mayotte",
+      }
     },
     {
       "num_code": "484",
@@ -1155,7 +3286,22 @@ class Countries {
       "alpha_3_code": "MEX",
       "en_short_name": "Mexico",
       "nationality": "Mexican",
-      "dial_code": "+52"
+      "dial_code": "+52",
+      "nameTranslations": {
+        "sk": "Mexiko",
+        "se": "Meksiko",
+        "pl": "Meksyk",
+        "no": "Mexico",
+        "ja": "メキシコ",
+        "it": "Messico",
+        "zh": "墨西哥",
+        "nl": "Mexico",
+        "de": "Mexiko",
+        "fr": "Mexique",
+        "es": "México",
+        "en": "Mexico",
+        "pt": "México",
+      }
     },
     {
       "num_code": "583",
@@ -1163,7 +3309,22 @@ class Countries {
       "alpha_3_code": "FSM",
       "en_short_name": "Micronesia (Federated States of)",
       "nationality": "Micronesian",
-      "dial_code": "+691"
+      "dial_code": "+691",
+      "nameTranslations": {
+        "sk": "Mikronézia",
+        "se": "Mikronesia",
+        "pl": "Mikronezja",
+        "no": "Mikronesiaføderasjonen",
+        "ja": "ミクロネシア連邦",
+        "it": "Micronesia",
+        "zh": "密克罗尼西亚",
+        "nl": "Micronesia",
+        "de": "Mikronesien",
+        "fr": "États fédérés de Micronésie",
+        "es": "Micronesia",
+        "en": "Micronesia",
+        "pt": "Micronésia",
+      }
     },
     {
       "num_code": "498",
@@ -1171,7 +3332,22 @@ class Countries {
       "alpha_3_code": "MDA",
       "en_short_name": "Moldova (Republic of)",
       "nationality": "Moldovan",
-      "dial_code": "+373"
+      "dial_code": "+373",
+      "nameTranslations": {
+        "sk": "Moldavsko",
+        "se": "Moldávia",
+        "pl": "Mołdawia",
+        "no": "Moldova",
+        "ja": "モルドバ",
+        "it": "Moldavia",
+        "zh": "摩尔多瓦",
+        "nl": "Moldavië",
+        "de": "Republik Moldau",
+        "fr": "Moldavie",
+        "es": "Moldavia",
+        "en": "Moldova",
+        "pt": "Moldova",
+      }
     },
     {
       "num_code": "492",
@@ -1179,7 +3355,22 @@ class Countries {
       "alpha_3_code": "MCO",
       "en_short_name": "Monaco",
       "nationality": "Monégasque, Monacan",
-      "dial_code": "+377"
+      "dial_code": "+377",
+      "nameTranslations": {
+        "sk": "Monako",
+        "se": "Monaco",
+        "pl": "Monako",
+        "no": "Monaco",
+        "ja": "モナコ",
+        "it": "Monaco",
+        "zh": "摩纳哥",
+        "nl": "Monaco",
+        "de": "Monaco",
+        "fr": "Monaco",
+        "es": "Mónaco",
+        "en": "Monaco",
+        "pt": "Mônaco",
+      }
     },
     {
       "num_code": "496",
@@ -1187,7 +3378,22 @@ class Countries {
       "alpha_3_code": "MNG",
       "en_short_name": "Mongolia",
       "nationality": "Mongolian",
-      "dial_code": "+976"
+      "dial_code": "+976",
+      "nameTranslations": {
+        "sk": "Mongolsko",
+        "se": "Mongolia",
+        "pl": "Mongolia",
+        "no": "Mongolia",
+        "ja": "モンゴル",
+        "it": "Mongolia",
+        "zh": "蒙古",
+        "nl": "Mongolië",
+        "de": "Mongolei",
+        "fr": "Mongolie",
+        "es": "Mongolia",
+        "en": "Mongolia",
+        "pt": "Mongólia",
+      }
     },
     {
       "num_code": "499",
@@ -1195,7 +3401,22 @@ class Countries {
       "alpha_3_code": "MNE",
       "en_short_name": "Montenegro",
       "nationality": "Montenegrin",
-      "dial_code": "+382"
+      "dial_code": "+382",
+      "nameTranslations": {
+        "sk": "Čierna Hora",
+        "se": "Montenegro",
+        "pl": "Czarnogóra",
+        "no": "Montenegro",
+        "ja": "モンテネグロ",
+        "it": "Montenegro",
+        "zh": "黑山",
+        "nl": "Montenegro",
+        "de": "Montenegro",
+        "fr": "Monténégro",
+        "es": "Montenegro",
+        "en": "Montenegro",
+        "pt": "Montenegro",
+      }
     },
     {
       "num_code": "500",
@@ -1203,7 +3424,22 @@ class Countries {
       "alpha_3_code": "MSR",
       "en_short_name": "Montserrat",
       "nationality": "Montserratian",
-      "dial_code": "+1664"
+      "dial_code": "+1664",
+      "nameTranslations": {
+        "sk": "Montserrat",
+        "se": "Montserrat",
+        "pl": "Montserrat",
+        "no": "Montserrat",
+        "ja": "モントセラト",
+        "it": "Montserrat",
+        "zh": "蒙特塞拉特",
+        "nl": "Montserrat",
+        "de": "Montserrat",
+        "fr": "Montserrat",
+        "es": "Montserrat",
+        "en": "Montserrat",
+        "pt": "Montserrat",
+      }
     },
     {
       "num_code": "504",
@@ -1211,7 +3447,22 @@ class Countries {
       "alpha_3_code": "MAR",
       "en_short_name": "Morocco",
       "nationality": "Moroccan",
-      "dial_code": "+212"
+      "dial_code": "+212",
+      "nameTranslations": {
+        "sk": "Maroko",
+        "se": "Marokko",
+        "pl": "Maroko",
+        "no": "Marokko",
+        "ja": "モロッコ",
+        "it": "Marocco",
+        "zh": "摩洛哥",
+        "nl": "Marokko",
+        "de": "Marokko",
+        "fr": "Maroc",
+        "es": "Marruecos",
+        "en": "Morocco",
+        "pt": "Marrocos",
+      }
     },
     {
       "num_code": "508",
@@ -1219,7 +3470,22 @@ class Countries {
       "alpha_3_code": "MOZ",
       "en_short_name": "Mozambique",
       "nationality": "Mozambican",
-      "dial_code": "+258"
+      "dial_code": "+258",
+      "nameTranslations": {
+        "sk": "Mozambik",
+        "se": "Mosambik",
+        "pl": "Mozambik",
+        "no": "Mosambik",
+        "ja": "モザンビーク",
+        "it": "Mozambico",
+        "zh": "莫桑比克",
+        "nl": "Mozambique",
+        "de": "Mosambik",
+        "fr": "Mozambique",
+        "es": "Mozambique",
+        "en": "Mozambique",
+        "pt": "Moçambique",
+      }
     },
     {
       "num_code": "104",
@@ -1227,7 +3493,22 @@ class Countries {
       "alpha_3_code": "MMR",
       "en_short_name": "Myanmar",
       "nationality": "Burmese",
-      "dial_code": "+95"
+      "dial_code": "+95",
+      "nameTranslations": {
+        "sk": "Mjanmarsko",
+        "se": "Burma",
+        "pl": "Mjanma (Birma)",
+        "no": "Myanmar (Burma)",
+        "ja": "ミャンマー (ビルマ)",
+        "it": "Myanmar (Birmania)",
+        "zh": "缅甸",
+        "nl": "Myanmar (Birma)",
+        "de": "Myanmar",
+        "fr": "Myanmar (Birmanie)",
+        "es": "Myanmar (Birmania)",
+        "en": "Myanmar (Burma)",
+        "pt": "Mianmar (Birmânia)",
+      }
     },
     {
       "num_code": "516",
@@ -1235,7 +3516,22 @@ class Countries {
       "alpha_3_code": "NAM",
       "en_short_name": "Namibia",
       "nationality": "Namibian",
-      "dial_code": "+264"
+      "dial_code": "+264",
+      "nameTranslations": {
+        "sk": "Namíbia",
+        "se": "Namibia",
+        "pl": "Namibia",
+        "no": "Namibia",
+        "ja": "ナミビア",
+        "it": "Namibia",
+        "zh": "纳米比亚",
+        "nl": "Namibië",
+        "de": "Namibia",
+        "fr": "Namibie",
+        "es": "Namibia",
+        "en": "Namibia",
+        "pt": "Namibia",
+      }
     },
     {
       "num_code": "520",
@@ -1243,7 +3539,22 @@ class Countries {
       "alpha_3_code": "NRU",
       "en_short_name": "Nauru",
       "nationality": "Nauruan",
-      "dial_code": "+674"
+      "dial_code": "+674",
+      "nameTranslations": {
+        "sk": "Nauru",
+        "se": "Nauru",
+        "pl": "Nauru",
+        "no": "Nauru",
+        "ja": "ナウル",
+        "it": "Nauru",
+        "zh": "瑙鲁",
+        "nl": "Nauru",
+        "de": "Nauru",
+        "fr": "Nauru",
+        "es": "Nauru",
+        "en": "Nauru",
+        "pt": "Nauru",
+      }
     },
     {
       "num_code": "524",
@@ -1251,7 +3562,22 @@ class Countries {
       "alpha_3_code": "NPL",
       "en_short_name": "Nepal",
       "nationality": "Nepali, Nepalese",
-      "dial_code": "+977"
+      "dial_code": "+977",
+      "nameTranslations": {
+        "sk": "Nepál",
+        "se": "Nepal",
+        "pl": "Nepal",
+        "no": "Nepal",
+        "ja": "ネパール",
+        "it": "Nepal",
+        "zh": "尼泊尔",
+        "nl": "Nepal",
+        "de": "Nepal",
+        "fr": "Népal",
+        "es": "Nepal",
+        "en": "Nepal",
+        "pt": "Nepal",
+      }
     },
     {
       "num_code": "528",
@@ -1259,7 +3585,22 @@ class Countries {
       "alpha_3_code": "NLD",
       "en_short_name": "Netherlands",
       "nationality": "Dutch, Netherlandic",
-      "dial_code": "+31"
+      "dial_code": "+31",
+      "nameTranslations": {
+        "sk": "Holandsko",
+        "se": "Vuolleeatnamat",
+        "pl": "Holandia",
+        "no": "Nederland",
+        "ja": "オランダ",
+        "it": "Paesi Bassi",
+        "zh": "荷兰",
+        "nl": "Nederland",
+        "de": "Niederlande",
+        "fr": "Pays-Bas",
+        "es": "Países Bajos",
+        "en": "Netherlands",
+        "pt": "Países Baixos",
+      }
     },
     {
       "num_code": "540",
@@ -1267,7 +3608,22 @@ class Countries {
       "alpha_3_code": "NCL",
       "en_short_name": "New Caledonia",
       "nationality": "New Caledonian",
-      "dial_code": "+687"
+      "dial_code": "+687",
+      "nameTranslations": {
+        "sk": "Nová Kaledónia",
+        "se": "Ođđa-Kaledonia",
+        "pl": "Nowa Kaledonia",
+        "no": "Ny-Caledonia",
+        "ja": "ニューカレドニア",
+        "it": "Nuova Caledonia",
+        "zh": "新喀里多尼亚",
+        "nl": "Nieuw-Caledonië",
+        "de": "Neukaledonien",
+        "fr": "Nouvelle-Calédonie",
+        "es": "Nueva Caledonia",
+        "en": "New Caledonia",
+        "pt": "Nova Caledônia",
+      }
     },
     {
       "num_code": "554",
@@ -1275,7 +3631,22 @@ class Countries {
       "alpha_3_code": "NZL",
       "en_short_name": "New Zealand",
       "nationality": "New Zealand, NZ",
-      "dial_code": "+64"
+      "dial_code": "+64",
+      "nameTranslations": {
+        "sk": "Nový Zéland",
+        "se": "Ođđa-Selánda",
+        "pl": "Nowa Zelandia",
+        "no": "New Zealand",
+        "ja": "ニュージーランド",
+        "it": "Nuova Zelanda",
+        "zh": "新西兰",
+        "nl": "Nieuw-Zeeland",
+        "de": "Neuseeland",
+        "fr": "Nouvelle-Zélande",
+        "es": "Nueva Zelanda",
+        "en": "New Zealand",
+        "pt": "Nova Zelândia",
+      }
     },
     {
       "num_code": "558",
@@ -1283,7 +3654,22 @@ class Countries {
       "alpha_3_code": "NIC",
       "en_short_name": "Nicaragua",
       "nationality": "Nicaraguan",
-      "dial_code": "+505"
+      "dial_code": "+505",
+      "nameTranslations": {
+        "sk": "Nikaragua",
+        "se": "Nicaragua",
+        "pl": "Nikaragua",
+        "no": "Nicaragua",
+        "ja": "ニカラグア",
+        "it": "Nicaragua",
+        "zh": "尼加拉瓜",
+        "nl": "Nicaragua",
+        "de": "Nicaragua",
+        "fr": "Nicaragua",
+        "es": "Nicaragua",
+        "en": "Nicaragua",
+        "pt": "Nicarágua",
+      }
     },
     {
       "num_code": "562",
@@ -1291,7 +3677,22 @@ class Countries {
       "alpha_3_code": "NER",
       "en_short_name": "Niger",
       "nationality": "Nigerien",
-      "dial_code": "+227"
+      "dial_code": "+227",
+      "nameTranslations": {
+        "sk": "Niger",
+        "se": "Niger",
+        "pl": "Niger",
+        "no": "Niger",
+        "ja": "ニジェール",
+        "it": "Niger",
+        "zh": "尼日尔",
+        "nl": "Niger",
+        "de": "Niger",
+        "fr": "Niger",
+        "es": "Níger",
+        "en": "Niger",
+        "pt": "Níger",
+      }
     },
     {
       "num_code": "566",
@@ -1299,7 +3700,22 @@ class Countries {
       "alpha_3_code": "NGA",
       "en_short_name": "Nigeria",
       "nationality": "Nigerian",
-      "dial_code": "+234"
+      "dial_code": "+234",
+      "nameTranslations": {
+        "sk": "Nigéria",
+        "se": "Nigeria",
+        "pl": "Nigeria",
+        "no": "Nigeria",
+        "ja": "ナイジェリア",
+        "it": "Nigeria",
+        "zh": "尼日利亚",
+        "nl": "Nigeria",
+        "de": "Nigeria",
+        "fr": "Nigéria",
+        "es": "Nigeria",
+        "en": "Nigeria",
+        "pt": "Nigéria",
+      }
     },
     {
       "num_code": "570",
@@ -1307,7 +3723,22 @@ class Countries {
       "alpha_3_code": "NIU",
       "en_short_name": "Niue",
       "nationality": "Niuean",
-      "dial_code": "+683"
+      "dial_code": "+683",
+      "nameTranslations": {
+        "sk": "Niue",
+        "se": "Niue",
+        "pl": "Niue",
+        "no": "Niue",
+        "ja": "ニウエ",
+        "it": "Niue",
+        "zh": "纽埃",
+        "nl": "Niue",
+        "de": "Niue",
+        "fr": "Niue",
+        "es": "Niue",
+        "en": "Niue",
+        "pt": "Niue",
+      }
     },
     {
       "num_code": "574",
@@ -1315,7 +3746,22 @@ class Countries {
       "alpha_3_code": "NFK",
       "en_short_name": "Norfolk Island",
       "nationality": "Norfolk Island",
-      "dial_code": "+672"
+      "dial_code": "+672",
+      "nameTranslations": {
+        "sk": "Norfolk",
+        "se": "Norfolksullot",
+        "pl": "Norfolk",
+        "no": "Norfolkøya",
+        "ja": "ノーフォーク島",
+        "it": "Isola Norfolk",
+        "zh": "诺福克岛",
+        "nl": "Norfolk",
+        "de": "Norfolkinsel",
+        "fr": "Île Norfolk",
+        "es": "Isla Norfolk",
+        "en": "Norfolk Island",
+        "pt": "Ilha Norfolk",
+      }
     },
     {
       "num_code": "580",
@@ -1323,7 +3769,22 @@ class Countries {
       "alpha_3_code": "MNP",
       "en_short_name": "Northern Mariana Islands",
       "nationality": "Northern Marianan",
-      "dial_code": "+1670"
+      "dial_code": "+1670",
+      "nameTranslations": {
+        "sk": "Severné Mariány",
+        "se": "Davvi-Mariánat",
+        "pl": "Mariany Północne",
+        "no": "Nord-Marianene",
+        "ja": "北マリアナ諸島",
+        "it": "Isole Marianne settentrionali",
+        "zh": "北马里亚纳群岛",
+        "nl": "Noordelijke Marianen",
+        "de": "Nördliche Marianen",
+        "fr": "Îles Mariannes du Nord",
+        "es": "Islas Marianas del Norte",
+        "en": "Northern Mariana Islands",
+        "pt": "Ilhas Marianas do Norte",
+      }
     },
     {
       "num_code": "578",
@@ -1331,7 +3792,22 @@ class Countries {
       "alpha_3_code": "NOR",
       "en_short_name": "Norway",
       "nationality": "Norwegian",
-      "dial_code": "+47"
+      "dial_code": "+47",
+      "nameTranslations": {
+        "sk": "Nórsko",
+        "se": "Norga",
+        "pl": "Norwegia",
+        "no": "Norge",
+        "ja": "ノルウェー",
+        "it": "Norvegia",
+        "zh": "挪威",
+        "nl": "Noorwegen",
+        "de": "Norwegen",
+        "fr": "Norvège",
+        "es": "Noruega",
+        "en": "Norway",
+        "pt": "Noruega",
+      }
     },
     {
       "num_code": "512",
@@ -1339,7 +3815,22 @@ class Countries {
       "alpha_3_code": "OMN",
       "en_short_name": "Oman",
       "nationality": "Omani",
-      "dial_code": "+968"
+      "dial_code": "+968",
+      "nameTranslations": {
+        "sk": "Omán",
+        "se": "Oman",
+        "pl": "Oman",
+        "no": "Oman",
+        "ja": "オマーン",
+        "it": "Oman",
+        "zh": "阿曼",
+        "nl": "Oman",
+        "de": "Oman",
+        "fr": "Oman",
+        "es": "Omán",
+        "en": "Oman",
+        "pt": "Omã",
+      }
     },
     {
       "num_code": "586",
@@ -1347,7 +3838,22 @@ class Countries {
       "alpha_3_code": "PAK",
       "en_short_name": "Pakistan",
       "nationality": "Pakistani",
-      "dial_code": "+92"
+      "dial_code": "+92",
+      "nameTranslations": {
+        "sk": "Pakistan",
+        "se": "Pakistan",
+        "pl": "Pakistan",
+        "no": "Pakistan",
+        "ja": "パキスタン",
+        "it": "Pakistan",
+        "zh": "巴基斯坦",
+        "nl": "Pakistan",
+        "de": "Pakistan",
+        "fr": "Pakistan",
+        "es": "Pakistán",
+        "en": "Pakistan",
+        "pt": "Paquistão",
+      }
     },
     {
       "num_code": "585",
@@ -1355,7 +3861,22 @@ class Countries {
       "alpha_3_code": "PLW",
       "en_short_name": "Palau",
       "nationality": "Palauan",
-      "dial_code": "+680"
+      "dial_code": "+680",
+      "nameTranslations": {
+        "sk": "Palau",
+        "se": "Palau",
+        "pl": "Palau",
+        "no": "Palau",
+        "ja": "パラオ",
+        "it": "Palau",
+        "zh": "帕劳",
+        "nl": "Palau",
+        "de": "Palau",
+        "fr": "Palaos",
+        "es": "Palaos",
+        "en": "Palau",
+        "pt": "Palau",
+      }
     },
     {
       "num_code": "275",
@@ -1363,7 +3884,22 @@ class Countries {
       "alpha_3_code": "PSE",
       "en_short_name": "Palestine, State of",
       "nationality": "Palestinian",
-      "dial_code": "+970"
+      "dial_code": "+970",
+      "nameTranslations": {
+        "sk": "Palestínske územia",
+        "se": "Palestina",
+        "pl": "Terytoria Palestyńskie",
+        "no": "Det palestinske området",
+        "ja": "パレスチナ自治区",
+        "it": "Territori palestinesi",
+        "zh": "巴勒斯坦领土",
+        "nl": "Palestijnse gebieden",
+        "de": "Palästinensische Autonomiegebiete",
+        "fr": "Territoires palestiniens",
+        "es": "Territorios Palestinos",
+        "en": "Palestinian Territories",
+        "pt": "Territórios Palestinos",
+      }
     },
     {
       "num_code": "591",
@@ -1371,7 +3907,22 @@ class Countries {
       "alpha_3_code": "PAN",
       "en_short_name": "Panama",
       "nationality": "Panamanian",
-      "dial_code": "+507"
+      "dial_code": "+507",
+      "nameTranslations": {
+        "sk": "Panama",
+        "se": "Panama",
+        "pl": "Panama",
+        "no": "Panama",
+        "ja": "パナマ",
+        "it": "Panamá",
+        "zh": "巴拿马",
+        "nl": "Panama",
+        "de": "Panama",
+        "fr": "Panama",
+        "es": "Panamá",
+        "en": "Panama",
+        "pt": "Panamá",
+      }
     },
     {
       "num_code": "598",
@@ -1379,7 +3930,22 @@ class Countries {
       "alpha_3_code": "PNG",
       "en_short_name": "Papua New Guinea",
       "nationality": "Papua New Guinean, Papuan",
-      "dial_code": "+675"
+      "dial_code": "+675",
+      "nameTranslations": {
+        "sk": "Papua-Nová Guinea",
+        "se": "Papua-Ođđa-Guinea",
+        "pl": "Papua-Nowa Gwinea",
+        "no": "Papua Ny-Guinea",
+        "ja": "パプアニューギニア",
+        "it": "Papua Nuova Guinea",
+        "zh": "巴布亚新几内亚",
+        "nl": "Papoea-Nieuw-Guinea",
+        "de": "Papua-Neuguinea",
+        "fr": "Papouasie-Nouvelle-Guinée",
+        "es": "Papúa Nueva Guinea",
+        "en": "Papua New Guinea",
+        "pt": "Papua Nova Guiné",
+      }
     },
     {
       "num_code": "600",
@@ -1387,7 +3953,22 @@ class Countries {
       "alpha_3_code": "PRY",
       "en_short_name": "Paraguay",
       "nationality": "Paraguayan",
-      "dial_code": "+595"
+      "dial_code": "+595",
+      "nameTranslations": {
+        "sk": "Paraguaj",
+        "se": "Paraguay",
+        "pl": "Paragwaj",
+        "no": "Paraguay",
+        "ja": "パラグアイ",
+        "it": "Paraguay",
+        "zh": "巴拉圭",
+        "nl": "Paraguay",
+        "de": "Paraguay",
+        "fr": "Paraguay",
+        "es": "Paraguay",
+        "en": "Paraguay",
+        "pt": "Paraguai",
+      }
     },
     {
       "num_code": "604",
@@ -1395,7 +3976,22 @@ class Countries {
       "alpha_3_code": "PER",
       "en_short_name": "Peru",
       "nationality": "Peruvian",
-      "dial_code": "+51"
+      "dial_code": "+51",
+      "nameTranslations": {
+        "sk": "Peru",
+        "se": "Peru",
+        "pl": "Peru",
+        "no": "Peru",
+        "ja": "ペルー",
+        "it": "Perù",
+        "zh": "秘鲁",
+        "nl": "Peru",
+        "de": "Peru",
+        "fr": "Pérou",
+        "es": "Perú",
+        "en": "Peru",
+        "pt": "Peru",
+      }
     },
     {
       "num_code": "608",
@@ -1403,7 +3999,22 @@ class Countries {
       "alpha_3_code": "PHL",
       "en_short_name": "Philippines",
       "nationality": "Philippine, Filipino",
-      "dial_code": "+63"
+      "dial_code": "+63",
+      "nameTranslations": {
+        "sk": "Filipíny",
+        "se": "Filippiinnat",
+        "pl": "Filipiny",
+        "no": "Filippinene",
+        "ja": "フィリピン",
+        "it": "Filippine",
+        "zh": "菲律宾",
+        "nl": "Filipijnen",
+        "de": "Philippinen",
+        "fr": "Philippines",
+        "es": "Filipinas",
+        "en": "Philippines",
+        "pt": "Filipinas",
+      }
     },
     {
       "num_code": "612",
@@ -1411,7 +4022,22 @@ class Countries {
       "alpha_3_code": "PCN",
       "en_short_name": "Pitcairn",
       "nationality": "Pitcairn Island",
-      "dial_code": "+64"
+      "dial_code": "+64",
+      "nameTranslations": {
+        "sk": "Pitcairnove ostrovy",
+        "se": "Pitcairn",
+        "pl": "Pitcairn",
+        "no": "Pitcairnøyene",
+        "ja": "ピトケアン諸島",
+        "it": "Isole Pitcairn",
+        "zh": "皮特凯恩群岛",
+        "nl": "Pitcairneilanden",
+        "de": "Pitcairninseln",
+        "fr": "Îles Pitcairn",
+        "es": "Islas Pitcairn",
+        "en": "Pitcairn Islands",
+        "pt": "Ilhas Pitcairn",
+      }
     },
     {
       "num_code": "616",
@@ -1419,7 +4045,22 @@ class Countries {
       "alpha_3_code": "POL",
       "en_short_name": "Poland",
       "nationality": "Polish",
-      "dial_code": "+48"
+      "dial_code": "+48",
+      "nameTranslations": {
+        "sk": "Poľsko",
+        "se": "Polen",
+        "pl": "Polska",
+        "no": "Polen",
+        "ja": "ポーランド",
+        "it": "Polonia",
+        "zh": "波兰",
+        "nl": "Polen",
+        "de": "Polen",
+        "fr": "Pologne",
+        "es": "Polonia",
+        "en": "Poland",
+        "pt": "Polônia",
+      }
     },
     {
       "num_code": "620",
@@ -1427,7 +4068,22 @@ class Countries {
       "alpha_3_code": "PRT",
       "en_short_name": "Portugal",
       "nationality": "Portuguese",
-      "dial_code": "+351"
+      "dial_code": "+351",
+      "nameTranslations": {
+        "sk": "Portugalsko",
+        "se": "Portugála",
+        "pl": "Portugalia",
+        "no": "Portugal",
+        "ja": "ポルトガル",
+        "it": "Portogallo",
+        "zh": "葡萄牙",
+        "nl": "Portugal",
+        "de": "Portugal",
+        "fr": "Portugal",
+        "es": "Portugal",
+        "en": "Portugal",
+        "pt": "Portugal",
+      }
     },
     {
       "num_code": "630",
@@ -1435,7 +4091,22 @@ class Countries {
       "alpha_3_code": "PRI",
       "en_short_name": "Puerto Rico",
       "nationality": "Puerto Rican",
-      "dial_code": "+1939"
+      "dial_code": "+1939",
+      "nameTranslations": {
+        "sk": "Portoriko",
+        "se": "Puerto Rico",
+        "pl": "Portoryko",
+        "no": "Puerto Rico",
+        "ja": "プエルトリコ",
+        "it": "Portorico",
+        "zh": "波多黎各",
+        "nl": "Puerto Rico",
+        "de": "Puerto Rico",
+        "fr": "Porto Rico",
+        "es": "Puerto Rico",
+        "en": "Puerto Rico",
+        "pt": "Porto Rico",
+      }
     },
     {
       "num_code": "634",
@@ -1443,7 +4114,22 @@ class Countries {
       "alpha_3_code": "QAT",
       "en_short_name": "Qatar",
       "nationality": "Qatari",
-      "dial_code": "+974"
+      "dial_code": "+974",
+      "nameTranslations": {
+        "sk": "Katar",
+        "se": "Qatar",
+        "pl": "Katar",
+        "no": "Qatar",
+        "ja": "カタール",
+        "it": "Qatar",
+        "zh": "卡塔尔",
+        "nl": "Qatar",
+        "de": "Katar",
+        "fr": "Qatar",
+        "es": "Catar",
+        "en": "Qatar",
+        "pt": "Catar",
+      }
     },
     {
       "num_code": "638",
@@ -1451,7 +4137,22 @@ class Countries {
       "alpha_3_code": "REU",
       "en_short_name": "Réunion",
       "nationality": "Réunionese, Réunionnais",
-      "dial_code": "+262"
+      "dial_code": "+262",
+      "nameTranslations": {
+        "sk": "Réunion",
+        "se": "Réunion",
+        "pl": "Reunion",
+        "no": "Réunion",
+        "ja": "レユニオン",
+        "it": "Riunione",
+        "zh": "留尼汪",
+        "nl": "Réunion",
+        "de": "Réunion",
+        "fr": "La Réunion",
+        "es": "Reunión",
+        "en": "Réunion",
+        "pt": "Reunião",
+      }
     },
     {
       "num_code": "642",
@@ -1459,7 +4160,22 @@ class Countries {
       "alpha_3_code": "ROU",
       "en_short_name": "Romania",
       "nationality": "Romanian",
-      "dial_code": "+40"
+      "dial_code": "+40",
+      "nameTranslations": {
+        "sk": "Rumunsko",
+        "se": "Románia",
+        "pl": "Rumunia",
+        "no": "Romania",
+        "ja": "ルーマニア",
+        "it": "Romania",
+        "zh": "罗马尼亚",
+        "nl": "Roemenië",
+        "de": "Rumänien",
+        "fr": "Roumanie",
+        "es": "Rumanía",
+        "en": "Romania",
+        "pt": "Romênia",
+      }
     },
     {
       "num_code": "643",
@@ -1467,7 +4183,22 @@ class Countries {
       "alpha_3_code": "RUS",
       "en_short_name": "Russian Federation",
       "nationality": "Russian",
-      "dial_code": "+7"
+      "dial_code": "+7",
+      "nameTranslations": {
+        "sk": "Rusko",
+        "se": "Ruošša",
+        "pl": "Rosja",
+        "no": "Russland",
+        "ja": "ロシア",
+        "it": "Russia",
+        "zh": "俄罗斯",
+        "nl": "Rusland",
+        "de": "Russland",
+        "fr": "Russie",
+        "es": "Rusia",
+        "en": "Russia",
+        "pt": "Rússia",
+      }
     },
     {
       "num_code": "646",
@@ -1475,7 +4206,22 @@ class Countries {
       "alpha_3_code": "RWA",
       "en_short_name": "Rwanda",
       "nationality": "Rwandan",
-      "dial_code": "+250"
+      "dial_code": "+250",
+      "nameTranslations": {
+        "sk": "Rwanda",
+        "se": "Rwanda",
+        "pl": "Rwanda",
+        "no": "Rwanda",
+        "ja": "ルワンダ",
+        "it": "Ruanda",
+        "zh": "卢旺达",
+        "nl": "Rwanda",
+        "de": "Ruanda",
+        "fr": "Rwanda",
+        "es": "Ruanda",
+        "en": "Rwanda",
+        "pt": "Ruanda",
+      }
     },
     {
       "num_code": "652",
@@ -1483,7 +4229,22 @@ class Countries {
       "alpha_3_code": "BLM",
       "en_short_name": "Saint Barthélemy",
       "nationality": "Barthélemois",
-      "dial_code": "+590"
+      "dial_code": "+590",
+      "nameTranslations": {
+        "sk": "Svätý Bartolomej",
+        "se": "Saint Barthélemy",
+        "pl": "Saint-Barthélemy",
+        "no": "Saint-Barthélemy",
+        "ja": "サン・バルテルミー",
+        "it": "Saint-Barthélemy",
+        "zh": "圣巴泰勒米",
+        "nl": "Saint-Barthélemy",
+        "de": "St. Barthélemy",
+        "fr": "Saint-Barthélemy",
+        "es": "San Bartolomé",
+        "en": "St. Barthélemy",
+        "pt": "São Bartolomeu",
+      }
     },
     {
       "num_code": "654",
@@ -1491,7 +4252,22 @@ class Countries {
       "alpha_3_code": "SHN",
       "en_short_name": "Saint Helena, Ascension and Tristan da Cunha",
       "nationality": "Saint Helenian",
-      "dial_code": "+290"
+      "dial_code": "+290",
+      "nameTranslations": {
+        "sk": "Svätá Helena",
+        "se": "Saint Helena",
+        "pl": "Wyspa Świętej Heleny",
+        "no": "St. Helena",
+        "ja": "セントヘレナ",
+        "it": "Sant’Elena",
+        "zh": "圣赫勒拿",
+        "nl": "Sint-Helena",
+        "de": "St. Helena",
+        "fr": "Sainte-Hélène",
+        "es": "Santa Elena",
+        "en": "St. Helena",
+        "pt": "Santa Helena",
+      }
     },
     {
       "num_code": "659",
@@ -1499,7 +4275,22 @@ class Countries {
       "alpha_3_code": "KNA",
       "en_short_name": "Saint Kitts and Nevis",
       "nationality": "Kittitian or Nevisian",
-      "dial_code": "+1869"
+      "dial_code": "+1869",
+      "nameTranslations": {
+        "sk": "Svätý Krištof a Nevis",
+        "se": "Saint Kitts ja Nevis",
+        "pl": "Saint Kitts i Nevis",
+        "no": "Saint Kitts og Nevis",
+        "ja": "セントクリストファー・ネーヴィス",
+        "it": "Saint Kitts e Nevis",
+        "zh": "圣基茨和尼维斯",
+        "nl": "Saint Kitts en Nevis",
+        "de": "St. Kitts und Nevis",
+        "fr": "Saint-Christophe-et-Niévès",
+        "es": "San Cristóbal y Nieves",
+        "en": "St. Kitts & Nevis",
+        "pt": "São Cristóvão e Nevis",
+      }
     },
     {
       "num_code": "662",
@@ -1507,7 +4298,22 @@ class Countries {
       "alpha_3_code": "LCA",
       "en_short_name": "Saint Lucia",
       "nationality": "Saint Lucian",
-      "dial_code": "+1758"
+      "dial_code": "+1758",
+      "nameTranslations": {
+        "sk": "Svätá Lucia",
+        "se": "Saint Lucia",
+        "pl": "Saint Lucia",
+        "no": "St. Lucia",
+        "ja": "セントルシア",
+        "it": "Saint Lucia",
+        "zh": "圣卢西亚",
+        "nl": "Saint Lucia",
+        "de": "St. Lucia",
+        "fr": "Sainte-Lucie",
+        "es": "Santa Lucía",
+        "en": "St. Lucia",
+        "pt": "Santa Lúcia",
+      }
     },
     {
       "num_code": "663",
@@ -1515,7 +4321,22 @@ class Countries {
       "alpha_3_code": "MAF",
       "en_short_name": "Saint Martin (French part)",
       "nationality": "Saint-Martinoise",
-      "dial_code": "+590"
+      "dial_code": "+590",
+      "nameTranslations": {
+        "sk": "Svätý Martin (fr.)",
+        "se": "Frankriikka Saint Martin",
+        "pl": "Saint-Martin",
+        "no": "Saint-Martin",
+        "ja": "サン・マルタン",
+        "it": "Saint Martin",
+        "zh": "法属圣马丁",
+        "nl": "Saint-Martin",
+        "de": "St. Martin",
+        "fr": "Saint-Martin",
+        "es": "San Martín",
+        "en": "St. Martin",
+        "pt": "São Martinho",
+      }
     },
     {
       "num_code": "666",
@@ -1523,7 +4344,22 @@ class Countries {
       "alpha_3_code": "SPM",
       "en_short_name": "Saint Pierre and Miquelon",
       "nationality": "Saint-Pierrais or Miquelonnais",
-      "dial_code": "+508"
+      "dial_code": "+508",
+      "nameTranslations": {
+        "sk": "Saint Pierre a Miquelon",
+        "se": "Saint Pierre ja Miquelon",
+        "pl": "Saint-Pierre i Miquelon",
+        "no": "Saint-Pierre-et-Miquelon",
+        "ja": "サンピエール島・ミクロン島",
+        "it": "Saint-Pierre e Miquelon",
+        "zh": "圣皮埃尔和密克隆群岛",
+        "nl": "Saint-Pierre en Miquelon",
+        "de": "St. Pierre und Miquelon",
+        "fr": "Saint-Pierre-et-Miquelon",
+        "es": "San Pedro y Miquelón",
+        "en": "St. Pierre & Miquelon",
+        "pt": "São Pedro e Miquelon",
+      }
     },
     {
       "num_code": "670",
@@ -1531,7 +4367,22 @@ class Countries {
       "alpha_3_code": "VCT",
       "en_short_name": "Saint Vincent and the Grenadines",
       "nationality": "Saint Vincentian, Vincentian",
-      "dial_code": "+1784"
+      "dial_code": "+1784",
+      "nameTranslations": {
+        "sk": "Svätý Vincent a Grenadíny",
+        "se": "Saint Vincent ja Grenadine",
+        "pl": "Saint Vincent i Grenadyny",
+        "no": "St. Vincent og Grenadinene",
+        "ja": "セントビンセント及びグレナディーン諸島",
+        "it": "Saint Vincent e Grenadine",
+        "zh": "圣文森特和格林纳丁斯",
+        "nl": "Saint Vincent en de Grenadines",
+        "de": "St. Vincent und die Grenadinen",
+        "fr": "Saint-Vincent-et-les-Grenadines",
+        "es": "San Vicente y las Granadinas",
+        "en": "St. Vincent & Grenadines",
+        "pt": "São Vicente e Granadinas",
+      }
     },
     {
       "num_code": "882",
@@ -1539,7 +4390,22 @@ class Countries {
       "alpha_3_code": "WSM",
       "en_short_name": "Samoa",
       "nationality": "Samoan",
-      "dial_code": "+685"
+      "dial_code": "+685",
+      "nameTranslations": {
+        "sk": "Samoa",
+        "se": "Samoa",
+        "pl": "Samoa",
+        "no": "Samoa",
+        "ja": "サモア",
+        "it": "Samoa",
+        "zh": "萨摩亚",
+        "nl": "Samoa",
+        "de": "Samoa",
+        "fr": "Samoa",
+        "es": "Samoa",
+        "en": "Samoa",
+        "pt": "Samoa",
+      }
     },
     {
       "num_code": "674",
@@ -1547,7 +4413,22 @@ class Countries {
       "alpha_3_code": "SMR",
       "en_short_name": "San Marino",
       "nationality": "Sammarinese",
-      "dial_code": "+378"
+      "dial_code": "+378",
+      "nameTranslations": {
+        "sk": "San Maríno",
+        "se": "San Marino",
+        "pl": "San Marino",
+        "no": "San Marino",
+        "ja": "サンマリノ",
+        "it": "San Marino",
+        "zh": "圣马力诺",
+        "nl": "San Marino",
+        "de": "San Marino",
+        "fr": "Saint-Marin",
+        "es": "San Marino",
+        "en": "San Marino",
+        "pt": "San Marino",
+      }
     },
     {
       "num_code": "678",
@@ -1555,7 +4436,22 @@ class Countries {
       "alpha_3_code": "STP",
       "en_short_name": "Sao Tome and Principe",
       "nationality": "São Toméan",
-      "dial_code": "+239"
+      "dial_code": "+239",
+      "nameTranslations": {
+        "sk": "Svätý Tomáš a Princov ostrov",
+        "se": "São Tomé ja Príncipe",
+        "pl": "Wyspy Świętego Tomasza i Książęca",
+        "no": "São Tomé og Príncipe",
+        "ja": "サントメ・プリンシペ",
+        "it": "São Tomé e Príncipe",
+        "zh": "圣多美和普林西比",
+        "nl": "Sao Tomé en Principe",
+        "de": "São Tomé und Príncipe",
+        "fr": "Sao Tomé-et-Principe",
+        "es": "Santo Tomé y Príncipe",
+        "en": "São Tomé & Príncipe",
+        "pt": "São Tomé e Príncipe",
+      }
     },
     {
       "num_code": "682",
@@ -1563,7 +4459,22 @@ class Countries {
       "alpha_3_code": "SAU",
       "en_short_name": "Saudi Arabia",
       "nationality": "Saudi, Saudi Arabian",
-      "dial_code": "+966"
+      "dial_code": "+966",
+      "nameTranslations": {
+        "sk": "Saudská Arábia",
+        "se": "Saudi-Arábia",
+        "pl": "Arabia Saudyjska",
+        "no": "Saudi-Arabia",
+        "ja": "サウジアラビア",
+        "it": "Arabia Saudita",
+        "zh": "沙特阿拉伯",
+        "nl": "Saoedi-Arabië",
+        "de": "Saudi-Arabien",
+        "fr": "Arabie saoudite",
+        "es": "Arabia Saudí",
+        "en": "Saudi Arabia",
+        "pt": "Arábia Saudita",
+      }
     },
     {
       "num_code": "686",
@@ -1571,7 +4482,22 @@ class Countries {
       "alpha_3_code": "SEN",
       "en_short_name": "Senegal",
       "nationality": "Senegalese",
-      "dial_code": "+221"
+      "dial_code": "+221",
+      "nameTranslations": {
+        "sk": "Senegal",
+        "se": "Senegal",
+        "pl": "Senegal",
+        "no": "Senegal",
+        "ja": "セネガル",
+        "it": "Senegal",
+        "zh": "塞内加尔",
+        "nl": "Senegal",
+        "de": "Senegal",
+        "fr": "Sénégal",
+        "es": "Senegal",
+        "en": "Senegal",
+        "pt": "Senegal",
+      }
     },
     {
       "num_code": "688",
@@ -1579,7 +4505,22 @@ class Countries {
       "alpha_3_code": "SRB",
       "en_short_name": "Serbia",
       "nationality": "Serbian",
-      "dial_code": "+381"
+      "dial_code": "+381",
+      "nameTranslations": {
+        "sk": "Srbsko",
+        "se": "Serbia",
+        "pl": "Serbia",
+        "no": "Serbia",
+        "ja": "セルビア",
+        "it": "Serbia",
+        "zh": "塞尔维亚",
+        "nl": "Servië",
+        "de": "Serbien",
+        "fr": "Serbie",
+        "es": "Serbia",
+        "en": "Serbia",
+        "pt": "Sérvia",
+      }
     },
     {
       "num_code": "690",
@@ -1587,7 +4528,22 @@ class Countries {
       "alpha_3_code": "SYC",
       "en_short_name": "Seychelles",
       "nationality": "Seychellois",
-      "dial_code": "+248"
+      "dial_code": "+248",
+      "nameTranslations": {
+        "sk": "Seychely",
+        "se": "Seychellsullot",
+        "pl": "Seszele",
+        "no": "Seychellene",
+        "ja": "セーシェル",
+        "it": "Seychelles",
+        "zh": "塞舌尔",
+        "nl": "Seychellen",
+        "de": "Seychellen",
+        "fr": "Seychelles",
+        "es": "Seychelles",
+        "en": "Seychelles",
+        "pt": "Seychelles",
+      }
     },
     {
       "num_code": "694",
@@ -1595,7 +4551,22 @@ class Countries {
       "alpha_3_code": "SLE",
       "en_short_name": "Sierra Leone",
       "nationality": "Sierra Leonean",
-      "dial_code": "+232"
+      "dial_code": "+232",
+      "nameTranslations": {
+        "sk": "Sierra Leone",
+        "se": "Sierra Leone",
+        "pl": "Sierra Leone",
+        "no": "Sierra Leone",
+        "ja": "シエラレオネ",
+        "it": "Sierra Leone",
+        "zh": "塞拉利昂",
+        "nl": "Sierra Leone",
+        "de": "Sierra Leone",
+        "fr": "Sierra Leone",
+        "es": "Sierra Leona",
+        "en": "Sierra Leone",
+        "pt": "Serra Leoa",
+      }
     },
     {
       "num_code": "702",
@@ -1603,7 +4574,22 @@ class Countries {
       "alpha_3_code": "SGP",
       "en_short_name": "Singapore",
       "nationality": "Singaporean",
-      "dial_code": "+65"
+      "dial_code": "+65",
+      "nameTranslations": {
+        "sk": "Singapur",
+        "se": "Singapore",
+        "pl": "Singapur",
+        "no": "Singapore",
+        "ja": "シンガポール",
+        "it": "Singapore",
+        "zh": "新加坡",
+        "nl": "Singapore",
+        "de": "Singapur",
+        "fr": "Singapour",
+        "es": "Singapur",
+        "en": "Singapore",
+        "pt": "Cingapura",
+      }
     },
     {
       "num_code": "703",
@@ -1611,7 +4597,22 @@ class Countries {
       "alpha_3_code": "SVK",
       "en_short_name": "Slovakia",
       "nationality": "Slovak",
-      "dial_code": "+421"
+      "dial_code": "+421",
+      "nameTranslations": {
+        "sk": "Slovensko",
+        "se": "Slovákia",
+        "pl": "Słowacja",
+        "no": "Slovakia",
+        "ja": "スロバキア",
+        "it": "Slovacchia",
+        "zh": "斯洛伐克",
+        "nl": "Slowakije",
+        "de": "Slowakei",
+        "fr": "Slovaquie",
+        "es": "Eslovaquia",
+        "en": "Slovakia",
+        "pt": "Eslováquia",
+      }
     },
     {
       "num_code": "705",
@@ -1619,7 +4620,22 @@ class Countries {
       "alpha_3_code": "SVN",
       "en_short_name": "Slovenia",
       "nationality": "Slovenian, Slovene",
-      "dial_code": "+386"
+      "dial_code": "+386",
+      "nameTranslations": {
+        "sk": "Slovinsko",
+        "se": "Slovenia",
+        "pl": "Słowenia",
+        "no": "Slovenia",
+        "ja": "スロベニア",
+        "it": "Slovenia",
+        "zh": "斯洛文尼亚",
+        "nl": "Slovenië",
+        "de": "Slowenien",
+        "fr": "Slovénie",
+        "es": "Eslovenia",
+        "en": "Slovenia",
+        "pt": "Eslovênia",
+      }
     },
     {
       "num_code": "90",
@@ -1627,7 +4643,22 @@ class Countries {
       "alpha_3_code": "SLB",
       "en_short_name": "Solomon Islands",
       "nationality": "Solomon Island",
-      "dial_code": "+677"
+      "dial_code": "+677",
+      "nameTranslations": {
+        "sk": "Šalamúnove ostrovy",
+        "se": "Salomon-sullot",
+        "pl": "Wyspy Salomona",
+        "no": "Salomonøyene",
+        "ja": "ソロモン諸島",
+        "it": "Isole Salomone",
+        "zh": "所罗门群岛",
+        "nl": "Salomonseilanden",
+        "de": "Salomonen",
+        "fr": "Îles Salomon",
+        "es": "Islas Salomón",
+        "en": "Solomon Islands",
+        "pt": "Ilhas Salomão",
+      }
     },
     {
       "num_code": "706",
@@ -1635,7 +4666,22 @@ class Countries {
       "alpha_3_code": "SOM",
       "en_short_name": "Somalia",
       "nationality": "Somali, Somalian",
-      "dial_code": "+252"
+      "dial_code": "+252",
+      "nameTranslations": {
+        "sk": "Somálsko",
+        "se": "Somália",
+        "pl": "Somalia",
+        "no": "Somalia",
+        "ja": "ソマリア",
+        "it": "Somalia",
+        "zh": "索马里",
+        "nl": "Somalië",
+        "de": "Somalia",
+        "fr": "Somalie",
+        "es": "Somalia",
+        "en": "Somalia",
+        "pt": "Somália",
+      }
     },
     {
       "num_code": "710",
@@ -1643,7 +4689,22 @@ class Countries {
       "alpha_3_code": "ZAF",
       "en_short_name": "South Africa",
       "nationality": "South African",
-      "dial_code": "+27"
+      "dial_code": "+27",
+      "nameTranslations": {
+        "sk": "Južná Afrika",
+        "se": "Mátta-Afrihká",
+        "pl": "Republika Południowej Afryki",
+        "no": "Sør-Afrika",
+        "ja": "南アフリカ",
+        "it": "Sudafrica",
+        "zh": "南非",
+        "nl": "Zuid-Afrika",
+        "de": "Südafrika",
+        "fr": "Afrique du Sud",
+        "es": "Sudáfrica",
+        "en": "South Africa",
+        "pt": "África do Sul",
+      }
     },
     {
       "num_code": "239",
@@ -1651,7 +4712,22 @@ class Countries {
       "alpha_3_code": "SGS",
       "en_short_name": "South Georgia and the South Sandwich Islands",
       "nationality": "South Georgia or South Sandwich Islands",
-      "dial_code": "+500"
+      "dial_code": "+500",
+      "nameTranslations": {
+        "sk": "Južná Georgia a Južné Sandwichove ostrovy",
+        "se": "Lulli Georgia ja Lulli Sandwich-sullot",
+        "pl": "Georgia Południowa i Sandwich Południowy",
+        "no": "Sør-Georgia og Sør-Sandwichøyene",
+        "ja": "サウスジョージア・サウスサンドウィッチ諸島",
+        "it": "Georgia del Sud e Sandwich australi",
+        "zh": "南乔治亚和南桑威奇群岛",
+        "nl": "Zuid-Georgia en Zuidelijke Sandwicheilanden",
+        "de": "Südgeorgien und die Südlichen Sandwichinseln",
+        "fr": "Géorgie du Sud et îles Sandwich du Sud",
+        "es": "Islas Georgia del Sur y Sandwich del Sur",
+        "en": "South Georgia & South Sandwich Islands",
+        "pt": "Geórgia do Sul e Ilhas Sandwich do Sul",
+      }
     },
     {
       "num_code": "728",
@@ -1659,7 +4735,22 @@ class Countries {
       "alpha_3_code": "SSD",
       "en_short_name": "South Sudan",
       "nationality": "South Sudanese",
-      "dial_code": "+211"
+      "dial_code": "+211",
+      "nameTranslations": {
+        "sk": "Južný Sudán",
+        "se": "Máttasudan",
+        "pl": "Sudan Południowy",
+        "no": "Sør-Sudan",
+        "ja": "南スーダン",
+        "it": "Sud Sudan",
+        "zh": "南苏丹",
+        "nl": "Zuid-Soedan",
+        "de": "Südsudan",
+        "fr": "Soudan du Sud",
+        "es": "Sudán del Sur",
+        "en": "South Sudan",
+        "pt": "Sudão do Sul",
+      }
     },
     {
       "num_code": "724",
@@ -1667,7 +4758,22 @@ class Countries {
       "alpha_3_code": "ESP",
       "en_short_name": "Spain",
       "nationality": "Spanish",
-      "dial_code": "+34"
+      "dial_code": "+34",
+      "nameTranslations": {
+        "sk": "Španielsko",
+        "se": "Spánia",
+        "pl": "Hiszpania",
+        "no": "Spania",
+        "ja": "スペイン",
+        "it": "Spagna",
+        "zh": "西班牙",
+        "nl": "Spanje",
+        "de": "Spanien",
+        "fr": "Espagne",
+        "es": "España",
+        "en": "Spain",
+        "pt": "Espanha",
+      }
     },
     {
       "num_code": "144",
@@ -1675,7 +4781,22 @@ class Countries {
       "alpha_3_code": "LKA",
       "en_short_name": "Sri Lanka",
       "nationality": "Sri Lankan",
-      "dial_code": "+94"
+      "dial_code": "+94",
+      "nameTranslations": {
+        "sk": "Srí Lanka",
+        "se": "Sri Lanka",
+        "pl": "Sri Lanka",
+        "no": "Sri Lanka",
+        "ja": "スリランカ",
+        "it": "Sri Lanka",
+        "zh": "斯里兰卡",
+        "nl": "Sri Lanka",
+        "de": "Sri Lanka",
+        "fr": "Sri Lanka",
+        "es": "Sri Lanka",
+        "en": "Sri Lanka",
+        "pt": "Sri Lanka",
+      }
     },
     {
       "num_code": "729",
@@ -1683,7 +4804,22 @@ class Countries {
       "alpha_3_code": "SDN",
       "en_short_name": "Sudan",
       "nationality": "Sudanese",
-      "dial_code": "+249"
+      "dial_code": "+249",
+      "nameTranslations": {
+        "sk": "Sudán",
+        "se": "Davvisudan",
+        "pl": "Sudan",
+        "no": "Sudan",
+        "ja": "スーダン",
+        "it": "Sudan",
+        "zh": "苏丹",
+        "nl": "Soedan",
+        "de": "Sudan",
+        "fr": "Soudan",
+        "es": "Sudán",
+        "en": "Sudan",
+        "pt": "Sudão",
+      }
     },
     {
       "num_code": "740",
@@ -1691,7 +4827,22 @@ class Countries {
       "alpha_3_code": "SUR",
       "en_short_name": "Suriname",
       "nationality": "Surinamese",
-      "dial_code": "+597"
+      "dial_code": "+597",
+      "nameTranslations": {
+        "sk": "Surinam",
+        "se": "Surinam",
+        "pl": "Surinam",
+        "no": "Surinam",
+        "ja": "スリナム",
+        "it": "Suriname",
+        "zh": "苏里南",
+        "nl": "Suriname",
+        "de": "Suriname",
+        "fr": "Suriname",
+        "es": "Surinam",
+        "en": "Suriname",
+        "pt": "Suriname",
+      }
     },
     {
       "num_code": "744",
@@ -1699,7 +4850,22 @@ class Countries {
       "alpha_3_code": "SJM",
       "en_short_name": "Svalbard and Jan Mayen",
       "nationality": "Svalbard",
-      "dial_code": "+47"
+      "dial_code": "+47",
+      "nameTranslations": {
+        "sk": "Svalbard a Jan Mayen",
+        "se": "Svalbárda ja Jan Mayen",
+        "pl": "Svalbard i Jan Mayen",
+        "no": "Svalbard og Jan Mayen",
+        "ja": "スバールバル諸島・ヤンマイエン島",
+        "it": "Svalbard e Jan Mayen",
+        "zh": "斯瓦尔巴和扬马延",
+        "nl": "Spitsbergen en Jan Mayen",
+        "de": "Spitzbergen und Jan Mayen",
+        "fr": "Svalbard et Jan Mayen",
+        "es": "Svalbard y Jan Mayen",
+        "en": "Svalbard & Jan Mayen",
+        "pt": "Svalbard e Jan Mayen",
+      }
     },
     {
       "num_code": "748",
@@ -1707,7 +4873,22 @@ class Countries {
       "alpha_3_code": "SWZ",
       "en_short_name": "Swaziland",
       "nationality": "Swazi",
-      "dial_code": "+268"
+      "dial_code": "+268",
+      "nameTranslations": {
+        "sk": "Eswatini",
+        "se": "Svazieana",
+        "pl": "Eswatini",
+        "no": "Eswatini",
+        "ja": "エスワティニ",
+        "it": "Swaziland",
+        "zh": "斯威士兰",
+        "nl": "eSwatini",
+        "de": "Eswatini",
+        "fr": "Eswatini",
+        "es": "Esuatini",
+        "en": "Eswatini",
+        "pt": "Eswatini",
+      }
     },
     {
       "num_code": "752",
@@ -1715,7 +4896,22 @@ class Countries {
       "alpha_3_code": "SWE",
       "en_short_name": "Sweden",
       "nationality": "Swedish",
-      "dial_code": "+46"
+      "dial_code": "+46",
+      "nameTranslations": {
+        "sk": "Švédsko",
+        "se": "Ruoŧŧa",
+        "pl": "Szwecja",
+        "no": "Sverige",
+        "ja": "スウェーデン",
+        "it": "Svezia",
+        "zh": "瑞典",
+        "nl": "Zweden",
+        "de": "Schweden",
+        "fr": "Suède",
+        "es": "Suecia",
+        "en": "Sweden",
+        "pt": "Suécia",
+      }
     },
     {
       "num_code": "756",
@@ -1723,7 +4919,22 @@ class Countries {
       "alpha_3_code": "CHE",
       "en_short_name": "Switzerland",
       "nationality": "Swiss",
-      "dial_code": "+41"
+      "dial_code": "+41",
+      "nameTranslations": {
+        "sk": "Švajčiarsko",
+        "se": "Šveica",
+        "pl": "Szwajcaria",
+        "no": "Sveits",
+        "ja": "スイス",
+        "it": "Svizzera",
+        "zh": "瑞士",
+        "nl": "Zwitserland",
+        "de": "Schweiz",
+        "fr": "Suisse",
+        "es": "Suiza",
+        "en": "Switzerland",
+        "pt": "Suíça",
+      }
     },
     {
       "num_code": "760",
@@ -1731,7 +4942,22 @@ class Countries {
       "alpha_3_code": "SYR",
       "en_short_name": "Syrian Arab Republic",
       "nationality": "Syrian",
-      "dial_code": "+963"
+      "dial_code": "+963",
+      "nameTranslations": {
+        "sk": "Sýria",
+        "se": "Syria",
+        "pl": "Syria",
+        "no": "Syria",
+        "ja": "シリア",
+        "it": "Siria",
+        "zh": "叙利亚",
+        "nl": "Syrië",
+        "de": "Syrien",
+        "fr": "Syrie",
+        "es": "Siria",
+        "en": "Syria",
+        "pt": "Síria",
+      }
     },
     {
       "num_code": "158",
@@ -1739,7 +4965,22 @@ class Countries {
       "alpha_3_code": "TWN",
       "en_short_name": "Taiwan, Province of China",
       "nationality": "Chinese, Taiwanese",
-      "dial_code": "+886"
+      "dial_code": "+886",
+      "nameTranslations": {
+        "sk": "Taiwan",
+        "se": "Taiwan",
+        "pl": "Tajwan",
+        "no": "Taiwan",
+        "ja": "台湾",
+        "it": "Taiwan",
+        "zh": "台湾",
+        "nl": "Taiwan",
+        "de": "Taiwan",
+        "fr": "Taïwan",
+        "es": "Taiwán",
+        "en": "Taiwan",
+        "pt": "Taiwan",
+      }
     },
     {
       "num_code": "762",
@@ -1747,7 +4988,22 @@ class Countries {
       "alpha_3_code": "TJK",
       "en_short_name": "Tajikistan",
       "nationality": "Tajikistani",
-      "dial_code": "+992"
+      "dial_code": "+992",
+      "nameTranslations": {
+        "sk": "Tadžikistan",
+        "se": "Tažikistan",
+        "pl": "Tadżykistan",
+        "no": "Tadsjikistan",
+        "ja": "タジキスタン",
+        "it": "Tagikistan",
+        "zh": "塔吉克斯坦",
+        "nl": "Tadzjikistan",
+        "de": "Tadschikistan",
+        "fr": "Tadjikistan",
+        "es": "Tayikistán",
+        "en": "Tajikistan",
+        "pt": "Tajiquistão",
+      }
     },
     {
       "num_code": "834",
@@ -1755,7 +5011,22 @@ class Countries {
       "alpha_3_code": "TZA",
       "en_short_name": "Tanzania, United Republic of",
       "nationality": "Tanzanian",
-      "dial_code": "+255"
+      "dial_code": "+255",
+      "nameTranslations": {
+        "sk": "Tanzánia",
+        "se": "Tanzánia",
+        "pl": "Tanzania",
+        "no": "Tanzania",
+        "ja": "タンザニア",
+        "it": "Tanzania",
+        "zh": "坦桑尼亚",
+        "nl": "Tanzania",
+        "de": "Tansania",
+        "fr": "Tanzanie",
+        "es": "Tanzania",
+        "en": "Tanzania",
+        "pt": "Tanzânia",
+      }
     },
     {
       "num_code": "764",
@@ -1763,7 +5034,22 @@ class Countries {
       "alpha_3_code": "THA",
       "en_short_name": "Thailand",
       "nationality": "Thai",
-      "dial_code": "+66"
+      "dial_code": "+66",
+      "nameTranslations": {
+        "sk": "Thajsko",
+        "se": "Thaieana",
+        "pl": "Tajlandia",
+        "no": "Thailand",
+        "ja": "タイ",
+        "it": "Thailandia",
+        "zh": "泰国",
+        "nl": "Thailand",
+        "de": "Thailand",
+        "fr": "Thaïlande",
+        "es": "Tailandia",
+        "en": "Thailand",
+        "pt": "Tailândia",
+      }
     },
     {
       "num_code": "626",
@@ -1771,7 +5057,22 @@ class Countries {
       "alpha_3_code": "TLS",
       "en_short_name": "Timor-Leste",
       "nationality": "Timorese",
-      "dial_code": "+670"
+      "dial_code": "+670",
+      "nameTranslations": {
+        "sk": "Východný Timor",
+        "se": "Nuorta-Timor",
+        "pl": "Timor Wschodni",
+        "no": "Øst-Timor",
+        "ja": "東ティモール",
+        "it": "Timor Est",
+        "zh": "东帝汶",
+        "nl": "Oost-Timor",
+        "de": "Timor-Leste",
+        "fr": "Timor oriental",
+        "es": "Timor-Leste",
+        "en": "Timor-Leste",
+        "pt": "Timor-Leste",
+      }
     },
     {
       "num_code": "768",
@@ -1779,7 +5080,22 @@ class Countries {
       "alpha_3_code": "TGO",
       "en_short_name": "Togo",
       "nationality": "Togolese",
-      "dial_code": "+228"
+      "dial_code": "+228",
+      "nameTranslations": {
+        "sk": "Togo",
+        "se": "Togo",
+        "pl": "Togo",
+        "no": "Togo",
+        "ja": "トーゴ",
+        "it": "Togo",
+        "zh": "多哥",
+        "nl": "Togo",
+        "de": "Togo",
+        "fr": "Togo",
+        "es": "Togo",
+        "en": "Togo",
+        "pt": "Ir",
+      }
     },
     {
       "num_code": "772",
@@ -1787,7 +5103,22 @@ class Countries {
       "alpha_3_code": "TKL",
       "en_short_name": "Tokelau",
       "nationality": "Tokelauan",
-      "dial_code": "+690"
+      "dial_code": "+690",
+      "nameTranslations": {
+        "sk": "Tokelau",
+        "se": "Tokelau",
+        "pl": "Tokelau",
+        "no": "Tokelau",
+        "ja": "トケラウ",
+        "it": "Tokelau",
+        "zh": "托克劳",
+        "nl": "Tokelau",
+        "de": "Tokelau",
+        "fr": "Tokelau",
+        "es": "Tokelau",
+        "en": "Tokelau",
+        "pt": "Tokelau",
+      }
     },
     {
       "num_code": "776",
@@ -1795,7 +5126,22 @@ class Countries {
       "alpha_3_code": "TON",
       "en_short_name": "Tonga",
       "nationality": "Tongan",
-      "dial_code": "+676"
+      "dial_code": "+676",
+      "nameTranslations": {
+        "sk": "Tonga",
+        "se": "Tonga",
+        "pl": "Tonga",
+        "no": "Tonga",
+        "ja": "トンガ",
+        "it": "Tonga",
+        "zh": "汤加",
+        "nl": "Tonga",
+        "de": "Tonga",
+        "fr": "Tonga",
+        "es": "Tonga",
+        "en": "Tonga",
+        "pt": "Tonga",
+      }
     },
     {
       "num_code": "780",
@@ -1803,7 +5149,22 @@ class Countries {
       "alpha_3_code": "TTO",
       "en_short_name": "Trinidad and Tobago",
       "nationality": "Trinidadian or Tobagonian",
-      "dial_code": "+1868"
+      "dial_code": "+1868",
+      "nameTranslations": {
+        "sk": "Trinidad a Tobago",
+        "se": "Trinidad ja Tobago",
+        "pl": "Trynidad i Tobago",
+        "no": "Trinidad og Tobago",
+        "ja": "トリニダード・トバゴ",
+        "it": "Trinidad e Tobago",
+        "zh": "特立尼达和多巴哥",
+        "nl": "Trinidad en Tobago",
+        "de": "Trinidad und Tobago",
+        "fr": "Trinité-et-Tobago",
+        "es": "Trinidad y Tobago",
+        "en": "Trinidad & Tobago",
+        "pt": "Trinidad e Tobago",
+      }
     },
     {
       "num_code": "788",
@@ -1811,7 +5172,22 @@ class Countries {
       "alpha_3_code": "TUN",
       "en_short_name": "Tunisia",
       "nationality": "Tunisian",
-      "dial_code": "+216"
+      "dial_code": "+216",
+      "nameTranslations": {
+        "sk": "Tunisko",
+        "se": "Tunisia",
+        "pl": "Tunezja",
+        "no": "Tunisia",
+        "ja": "チュニジア",
+        "it": "Tunisia",
+        "zh": "突尼斯",
+        "nl": "Tunesië",
+        "de": "Tunesien",
+        "fr": "Tunisie",
+        "es": "Túnez",
+        "en": "Tunisia",
+        "pt": "Tunísia",
+      }
     },
     {
       "num_code": "792",
@@ -1819,7 +5195,22 @@ class Countries {
       "alpha_3_code": "TUR",
       "en_short_name": "Turkey",
       "nationality": "Turkish",
-      "dial_code": "+90"
+      "dial_code": "+90",
+      "nameTranslations": {
+        "sk": "Turecko",
+        "se": "Durka",
+        "pl": "Turcja",
+        "no": "Tyrkia",
+        "ja": "トルコ",
+        "it": "Turchia",
+        "zh": "土耳其",
+        "nl": "Turkije",
+        "de": "Türkei",
+        "fr": "Turquie",
+        "es": "Turquía",
+        "en": "Turkey",
+        "pt": "Peru",
+      }
     },
     {
       "num_code": "795",
@@ -1827,7 +5218,22 @@ class Countries {
       "alpha_3_code": "TKM",
       "en_short_name": "Turkmenistan",
       "nationality": "Turkmen",
-      "dial_code": "+993"
+      "dial_code": "+993",
+      "nameTranslations": {
+        "sk": "Turkménsko",
+        "se": "Turkmenistan",
+        "pl": "Turkmenistan",
+        "no": "Turkmenistan",
+        "ja": "トルクメニスタン",
+        "it": "Turkmenistan",
+        "zh": "土库曼斯坦",
+        "nl": "Turkmenistan",
+        "de": "Turkmenistan",
+        "fr": "Turkménistan",
+        "es": "Turkmenistán",
+        "en": "Turkmenistan",
+        "pt": "Turcomenistão",
+      }
     },
     {
       "num_code": "796",
@@ -1835,7 +5241,22 @@ class Countries {
       "alpha_3_code": "TCA",
       "en_short_name": "Turks and Caicos Islands",
       "nationality": "Turks and Caicos Island",
-      "dial_code": "+1649"
+      "dial_code": "+1649",
+      "nameTranslations": {
+        "sk": "Turks a Caicos",
+        "se": "Turks ja Caicos-sullot",
+        "pl": "Turks i Caicos",
+        "no": "Turks- og Caicosøyene",
+        "ja": "タークス・カイコス諸島",
+        "it": "Isole Turks e Caicos",
+        "zh": "特克斯和凯科斯群岛",
+        "nl": "Turks- en Caicoseilanden",
+        "de": "Turks- und Caicosinseln",
+        "fr": "Îles Turques-et-Caïques",
+        "es": "Islas Turcas y Caicos",
+        "en": "Turks & Caicos Islands",
+        "pt": "Ilhas Turks e Caicos",
+      }
     },
     {
       "num_code": "798",
@@ -1843,7 +5264,22 @@ class Countries {
       "alpha_3_code": "TUV",
       "en_short_name": "Tuvalu",
       "nationality": "Tuvaluan",
-      "dial_code": "+688"
+      "dial_code": "+688",
+      "nameTranslations": {
+        "sk": "Tuvalu",
+        "se": "Tuvalu",
+        "pl": "Tuvalu",
+        "no": "Tuvalu",
+        "ja": "ツバル",
+        "it": "Tuvalu",
+        "zh": "图瓦卢",
+        "nl": "Tuvalu",
+        "de": "Tuvalu",
+        "fr": "Tuvalu",
+        "es": "Tuvalu",
+        "en": "Tuvalu",
+        "pt": "Tuvalu",
+      }
     },
     {
       "num_code": "800",
@@ -1851,7 +5287,22 @@ class Countries {
       "alpha_3_code": "UGA",
       "en_short_name": "Uganda",
       "nationality": "Ugandan",
-      "dial_code": "+256"
+      "dial_code": "+256",
+      "nameTranslations": {
+        "sk": "Uganda",
+        "se": "Uganda",
+        "pl": "Uganda",
+        "no": "Uganda",
+        "ja": "ウガンダ",
+        "it": "Uganda",
+        "zh": "乌干达",
+        "nl": "Oeganda",
+        "de": "Uganda",
+        "fr": "Ouganda",
+        "es": "Uganda",
+        "en": "Uganda",
+        "pt": "Uganda",
+      }
     },
     {
       "num_code": "804",
@@ -1859,7 +5310,22 @@ class Countries {
       "alpha_3_code": "UKR",
       "en_short_name": "Ukraine",
       "nationality": "Ukrainian",
-      "dial_code": "+380"
+      "dial_code": "+380",
+      "nameTranslations": {
+        "sk": "Ukrajina",
+        "se": "Ukraina",
+        "pl": "Ukraina",
+        "no": "Ukraina",
+        "ja": "ウクライナ",
+        "it": "Ucraina",
+        "zh": "乌克兰",
+        "nl": "Oekraïne",
+        "de": "Ukraine",
+        "fr": "Ukraine",
+        "es": "Ucrania",
+        "en": "Ukraine",
+        "pt": "Ucrânia",
+      }
     },
     {
       "num_code": "784",
@@ -1867,7 +5333,22 @@ class Countries {
       "alpha_3_code": "ARE",
       "en_short_name": "United Arab Emirates",
       "nationality": "Emirati, Emirian, Emiri",
-      "dial_code": "+971"
+      "dial_code": "+971",
+      "nameTranslations": {
+        "sk": "Spojené arabské emiráty",
+        "se": "Ovttastuvvan Arábaemiráhtat",
+        "pl": "Zjednoczone Emiraty Arabskie",
+        "no": "De forente arabiske emirater",
+        "ja": "アラブ首長国連邦",
+        "it": "Emirati Arabi Uniti",
+        "zh": "阿拉伯联合酋长国",
+        "nl": "Verenigde Arabische Emiraten",
+        "de": "Vereinigte Arabische Emirate",
+        "fr": "Émirats arabes unis",
+        "es": "Emiratos Árabes Unidos",
+        "en": "United Arab Emirates",
+        "pt": "Emirados Árabes Unidos",
+      }
     },
     {
       "num_code": "826",
@@ -1875,7 +5356,22 @@ class Countries {
       "alpha_3_code": "GBR",
       "en_short_name": "United Kingdom of Great Britain and Northern Ireland",
       "nationality": "British, UK",
-      "dial_code": "+44"
+      "dial_code": "+44",
+      "nameTranslations": {
+        "sk": "Spojené kráľovstvo",
+        "se": "Stuorra-Británnia",
+        "pl": "Wielka Brytania",
+        "no": "Storbritannia",
+        "ja": "イギリス",
+        "it": "Regno Unito",
+        "zh": "英国",
+        "nl": "Verenigd Koninkrijk",
+        "de": "Vereinigtes Königreich",
+        "fr": "Royaume-Uni",
+        "es": "Reino Unido",
+        "en": "United Kingdom",
+        "pt": "Reino Unido",
+      }
     },
     {
       "num_code": "840",
@@ -1883,7 +5379,22 @@ class Countries {
       "alpha_3_code": "USA",
       "en_short_name": "United States of America",
       "nationality": "American",
-      "dial_code": "+1"
+      "dial_code": "+1",
+      "nameTranslations": {
+        "sk": "Spojené štáty",
+        "se": "Amerihká ovttastuvvan stáhtat",
+        "pl": "Stany Zjednoczone",
+        "no": "USA",
+        "ja": "アメリカ合衆国",
+        "it": "Stati Uniti",
+        "zh": "美国",
+        "nl": "Verenigde Staten",
+        "de": "Vereinigte Staaten",
+        "fr": "États-Unis",
+        "es": "Estados Unidos",
+        "en": "United States",
+        "pt": "Estados Unidos",
+      }
     },
     {
       "num_code": "858",
@@ -1891,7 +5402,22 @@ class Countries {
       "alpha_3_code": "URY",
       "en_short_name": "Uruguay",
       "nationality": "Uruguayan",
-      "dial_code": "+598"
+      "dial_code": "+598",
+      "nameTranslations": {
+        "sk": "Uruguaj",
+        "se": "Uruguay",
+        "pl": "Urugwaj",
+        "no": "Uruguay",
+        "ja": "ウルグアイ",
+        "it": "Uruguay",
+        "zh": "乌拉圭",
+        "nl": "Uruguay",
+        "de": "Uruguay",
+        "fr": "Uruguay",
+        "es": "Uruguay",
+        "en": "Uruguay",
+        "pt": "Uruguai",
+      }
     },
     {
       "num_code": "860",
@@ -1899,7 +5425,22 @@ class Countries {
       "alpha_3_code": "UZB",
       "en_short_name": "Uzbekistan",
       "nationality": "Uzbekistani, Uzbek",
-      "dial_code": "+998"
+      "dial_code": "+998",
+      "nameTranslations": {
+        "sk": "Uzbekistan",
+        "se": "Usbekistan",
+        "pl": "Uzbekistan",
+        "no": "Usbekistan",
+        "ja": "ウズベキスタン",
+        "it": "Uzbekistan",
+        "zh": "乌兹别克斯坦",
+        "nl": "Oezbekistan",
+        "de": "Usbekistan",
+        "fr": "Ouzbékistan",
+        "es": "Uzbekistán",
+        "en": "Uzbekistan",
+        "pt": "Uzbequistão",
+      }
     },
     {
       "num_code": "548",
@@ -1907,7 +5448,22 @@ class Countries {
       "alpha_3_code": "VUT",
       "en_short_name": "Vanuatu",
       "nationality": "Ni-Vanuatu, Vanuatuan",
-      "dial_code": "+678"
+      "dial_code": "+678",
+      "nameTranslations": {
+        "sk": "Vanuatu",
+        "se": "Vanuatu",
+        "pl": "Vanuatu",
+        "no": "Vanuatu",
+        "ja": "バヌアツ",
+        "it": "Vanuatu",
+        "zh": "瓦努阿图",
+        "nl": "Vanuatu",
+        "de": "Vanuatu",
+        "fr": "Vanuatu",
+        "es": "Vanuatu",
+        "en": "Vanuatu",
+        "pt": "Vanuatu",
+      }
     },
     {
       "num_code": "862",
@@ -1915,7 +5471,22 @@ class Countries {
       "alpha_3_code": "VEN",
       "en_short_name": "Venezuela (Bolivarian Republic of)",
       "nationality": "Venezuelan",
-      "dial_code": "+58"
+      "dial_code": "+58",
+      "nameTranslations": {
+        "sk": "Venezuela",
+        "se": "Venezuela",
+        "pl": "Wenezuela",
+        "no": "Venezuela",
+        "ja": "ベネズエラ",
+        "it": "Venezuela",
+        "zh": "委内瑞拉",
+        "nl": "Venezuela",
+        "de": "Venezuela",
+        "fr": "Venezuela",
+        "es": "Venezuela",
+        "en": "Venezuela",
+        "pt": "Venezuela",
+      }
     },
     {
       "num_code": "704",
@@ -1923,7 +5494,22 @@ class Countries {
       "alpha_3_code": "VNM",
       "en_short_name": "Vietnam",
       "nationality": "Vietnamese",
-      "dial_code": "+84"
+      "dial_code": "+84",
+      "nameTranslations": {
+        "sk": "Vietnam",
+        "se": "Vietnam",
+        "pl": "Wietnam",
+        "no": "Vietnam",
+        "ja": "ベトナム",
+        "it": "Vietnam",
+        "zh": "越南",
+        "nl": "Vietnam",
+        "de": "Vietnam",
+        "fr": "Vietnam",
+        "es": "Vietnam",
+        "en": "Vietnam",
+        "pt": "Vietnã",
+      }
     },
     {
       "num_code": "92",
@@ -1931,7 +5517,22 @@ class Countries {
       "alpha_3_code": "VGB",
       "en_short_name": "Virgin Islands (British)",
       "nationality": "British Virgin Island",
-      "dial_code": "+1284"
+      "dial_code": "+1284",
+      "nameTranslations": {
+        "sk": "Britské Panenské ostrovy",
+        "se": "Brittania Virgin-sullot",
+        "pl": "Brytyjskie Wyspy Dziewicze",
+        "no": "De britiske jomfruøyene",
+        "ja": "英領ヴァージン諸島",
+        "it": "Isole Vergini Britanniche",
+        "zh": "英属维尔京群岛",
+        "nl": "Britse Maagdeneilanden",
+        "de": "Britische Jungferninseln",
+        "fr": "Îles Vierges britanniques",
+        "es": "Islas Vírgenes Británicas",
+        "en": "British Virgin Islands",
+        "pt": "Ilhas Virgens Britânicas",
+      }
     },
     {
       "num_code": "850",
@@ -1939,7 +5540,22 @@ class Countries {
       "alpha_3_code": "VIR",
       "en_short_name": "Virgin Islands (U.S.)",
       "nationality": "U.S. Virgin Island",
-      "dial_code": "+1340"
+      "dial_code": "+1340",
+      "nameTranslations": {
+        "sk": "Americké Panenské ostrovy",
+        "se": "AOS Virgin-sullot",
+        "pl": "Wyspy Dziewicze Stanów Zjednoczonych",
+        "no": "De amerikanske jomfruøyene",
+        "ja": "米領ヴァージン諸島",
+        "it": "Isole Vergini Americane",
+        "zh": "美属维尔京群岛",
+        "nl": "Amerikaanse Maagdeneilanden",
+        "de": "Amerikanische Jungferninseln",
+        "fr": "Îles Vierges des États-Unis",
+        "es": "Islas Vírgenes de EE. UU.",
+        "en": "U.S. Virgin Islands",
+        "pt": "Ilhas Virgens Americanas",
+      }
     },
     {
       "num_code": "876",
@@ -1947,7 +5563,22 @@ class Countries {
       "alpha_3_code": "WLF",
       "en_short_name": "Wallis and Futuna",
       "nationality": "Wallis and Futuna, Wallisian or Futunan",
-      "dial_code": "+681"
+      "dial_code": "+681",
+      "nameTranslations": {
+        "sk": "Wallis a Futuna",
+        "se": "Wallis ja Futuna",
+        "pl": "Wallis i Futuna",
+        "no": "Wallis og Futuna",
+        "ja": "ウォリス・フツナ",
+        "it": "Wallis e Futuna",
+        "zh": "瓦利斯和富图纳",
+        "nl": "Wallis en Futuna",
+        "de": "Wallis und Futuna",
+        "fr": "Wallis-et-Futuna",
+        "es": "Wallis y Futuna",
+        "en": "Wallis & Futuna",
+        "pt": "Wallis e Futuna",
+      }
     },
     {
       "num_code": "887",
@@ -1955,7 +5586,22 @@ class Countries {
       "alpha_3_code": "YEM",
       "en_short_name": "Yemen",
       "nationality": "Yemeni",
-      "dial_code": "+967"
+      "dial_code": "+967",
+      "nameTranslations": {
+        "sk": "Jemen",
+        "se": "Jemen",
+        "pl": "Jemen",
+        "no": "Jemen",
+        "ja": "イエメン",
+        "it": "Yemen",
+        "zh": "也门",
+        "nl": "Jemen",
+        "de": "Jemen",
+        "fr": "Yémen",
+        "es": "Yemen",
+        "en": "Yemen",
+        "pt": "Iémen",
+      }
     },
     {
       "num_code": "894",
@@ -1963,7 +5609,22 @@ class Countries {
       "alpha_3_code": "ZMB",
       "en_short_name": "Zambia",
       "nationality": "Zambian",
-      "dial_code": "+260"
+      "dial_code": "+260",
+      "nameTranslations": {
+        "sk": "Zambia",
+        "se": "Zambia",
+        "pl": "Zambia",
+        "no": "Zambia",
+        "ja": "ザンビア",
+        "it": "Zambia",
+        "zh": "赞比亚",
+        "nl": "Zambia",
+        "de": "Sambia",
+        "fr": "Zambie",
+        "es": "Zambia",
+        "en": "Zambia",
+        "pt": "Zâmbia",
+      }
     },
     {
       "num_code": "716",
@@ -1971,7 +5632,22 @@ class Countries {
       "alpha_3_code": "ZWE",
       "en_short_name": "Zimbabwe",
       "nationality": "Zimbabwean",
-      "dial_code": "+263"
+      "dial_code": "+263",
+      "nameTranslations": {
+        "sk": "Zimbabwe",
+        "se": "Zimbabwe",
+        "pl": "Zimbabwe",
+        "no": "Zimbabwe",
+        "ja": "ジンバブエ",
+        "it": "Zimbabwe",
+        "zh": "津巴布韦",
+        "nl": "Zimbabwe",
+        "de": "Simbabwe",
+        "fr": "Zimbabwe",
+        "es": "Zimbabue",
+        "en": "Zimbabwe",
+        "pt": "Zimbábue",
+      }
     }
   ];
 }
